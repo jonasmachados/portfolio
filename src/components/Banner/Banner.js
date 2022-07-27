@@ -10,7 +10,7 @@ const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const toRotate = ["Full Stack Developer", "React.js/Spring Boot Developer", "Web Developer"];
+  const toRotate = ["Full Stack Developer", "React.js / Spring Boot Developer", "Web Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -54,11 +54,11 @@ const Banner = () => {
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
               {" "}
-              {`Hi! I'm Jonas`}{" "}
+              {`Hi! I'm Jonas`}<br></br>{" "}
               <span
                 className="txt-rotate"
                 dataPeriod="1000"
-                data-rotate='[ "Full Stack Developer", "React.js/Spring Boot Developer", "Web Developer" ]'
+                data-rotate='[ "Full Stack Developer", "React.js / Spring Boot Developer", "Web Developer" ]'
               >
                 <span className="wrap">{text}</span>
               </span>
