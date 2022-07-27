@@ -1,5 +1,5 @@
 import "./Skills.css";
-import CodeThink from "./../../assets/img/skills.svg";
+import codeThink from "./../../assets/img/skills.svg";
 
 const listTitleStyle = {
   fontWeight: 900,
@@ -70,7 +70,7 @@ const Skills = () => {
         scrambled it to make a type specimen book.
       </p>
       <div className="Container">
-        <img src={CodeThink} alt="CodeThinh img" />
+        <img src={codeThink} alt="CodeThinh img" />
         {totalSkills.map((Skills) => {
           return <div className="List">{Skills}</div>;
         })}
