@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Nav.css";
+import '../../App.css';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -18,10 +19,10 @@ const Navbar = () => {
           <a href="/">About</a>
         </li>
         <li className="nav-item">
-          <a href="/">Skills</a>
+          <a href="/#skills">Skills</a>
         </li>
         <li className="nav-item">
-          <a href="/">Projects</a>
+          <a href="/#project">Projects</a>
         </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>

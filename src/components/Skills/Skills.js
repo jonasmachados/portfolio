@@ -61,7 +61,7 @@ const totalSkills = [
 
 const Skills = () => {
   return (
-    <div className="Skills">
+    <div className="Skills" id="skills">
       <h1>What about the Skills?</h1>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
