@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+SC&display=swap');
 
 .Skills {
-    padding-bottom: 5%
+    padding-bottom: 5%;
+    padding-top: 2%;
 }
 
 .Skills h1{

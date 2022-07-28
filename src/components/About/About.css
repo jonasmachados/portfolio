@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+SC&display=swap");
+
+.About{
+    background: #161C28;
+}
+.About h1 {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  padding-top: 30%;
+  text-align: center;
+  padding-right: 40%;
+}
+
+.About p {
+  font-size: 25px;
+  color: #b8b8b8;
+}
+
+.About img {
+  border-radius: 50%;
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
