@@ -5,6 +5,7 @@ import Banner from './components/Banner/Banner';
 import Navbar from './components/NaviBar/Navibar';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
+import Footer from './components/Footer/Footer';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Skills />
       <Projects /> 
       <Contact />
+      <Footer />
     
     </div>
   );
