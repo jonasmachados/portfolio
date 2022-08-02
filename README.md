@@ -12,7 +12,7 @@ yarn add react-bootstrap
 
 react-bootstrap-icons:
 ```
-yarn add 
+yarn add react-bootstrap-icons 
 ```
 
 react-multi-carousel:
@@ -20,3 +20,22 @@ react-multi-carousel:
 yarn add 
 ```
 
+react-use-mailchimp-form:
+```
+yarn add use-mailchimp-form
+```
+
+react-hook-form
+```
+yarn add react-hook-form
+```
+
+react-yarn-yup
+```
+yarn add yup
+```
+
+react-hookform/resolvers
+```
+yarn add @hookform/resolvers
+```
