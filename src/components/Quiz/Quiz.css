@@ -23,7 +23,7 @@
   width: 100%;
   text-align: center;
   cursor: pointer;
-  border-bottom: 3px solid #6c63ff;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .Quiz h2 {
@@ -42,7 +42,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: 1px solid #6c63ff;
+  border-bottom: 1px solid var(--primary-color);
   position: initial;  
 }
 

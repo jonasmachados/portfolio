@@ -5,14 +5,14 @@ const Contact = () => {
 
   const [ownerRef, setOwnerRef] = useState("");
   const [emailFrom, setEmailFrom] = useState("");
-  //const [emailTo, setEmailTo] = useState("");
   const [subject, setSubject] = useState("");
   const [text, setText] = useState("");
+  const emailTo = "jonasmachado.ti@gmail.com";
 
   const save = (e) => {
     e.preventDefault();
 
-    const emailTo = "jonasmachado.ti@gmail.com";
+    
     const users = { ownerRef, emailFrom, emailTo, subject, text };
 
     request.createUser(users)
@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact">
+    <section className="container-contact" id="contact">
     <form>
       <div className="form-group mb-2">
         <label className="form-label"> name :</label>
@@ -86,7 +86,7 @@ const Contact = () => {
       </button>
       
     </form>
-  </div>
+  </section>
   );
 };
 
