@@ -36,6 +36,12 @@ a{
     font-family: 'Amatic SC', cursive;
 }
 
+a:hover{
+    color: #fff;    
+    border-bottom: 3px solid #fff;
+   
+}
+
 .nav-menu {
     display: flex;
 }

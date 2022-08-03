@@ -24,6 +24,9 @@ const Navbar = () => {
         <li className="nav-item">
           <a href="/#project">Projects</a>
         </li>
+        <li className="nav-item">
+          <a href="/#contact">Contact</a>
+        </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>
         {click ? (

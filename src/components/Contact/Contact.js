@@ -28,7 +28,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div id="contact">
     <form>
       <div className="form-group mb-2">
         <label className="form-label"> name :</label>

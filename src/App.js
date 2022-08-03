@@ -7,7 +7,6 @@ import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Footer from './components/Footer/Footer';
 
-
 const App = () => {
   return (
     <div className="App">
