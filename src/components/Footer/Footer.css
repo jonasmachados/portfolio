@@ -1,13 +1,13 @@
 .footer {
     padding: 0 0 0 0;
-    background: #6c63ff;
+    background: var(--primary-color);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
  
   .footer img {
-    width: 60%;
+    width: 40%;
 }
   .footer p {
     margin-left: 1%;

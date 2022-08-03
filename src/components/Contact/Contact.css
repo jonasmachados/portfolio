@@ -1,47 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+SC&display=swap");
 
-container-contact{
+.container-contact {
   background-color: var(--background-color);
 }
 
+.rows {
+  display: flex;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+}
+
 form {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-  }
-  
-  img {
-    max-width: 300px;
-  }
-  
-  label {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-  }
- 
-  input {
-    border-radius: 5px;
-    border: 1px solid gray;
-    height: 25px;
-    width: 300px;
-  }
-  
-  button {
-    width: 300px;
-    height: 40px;
-    background-color: aqua;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  span {
-    color: red;
-    position:absolute;
-    margin-top: 50px;
-  }
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  padding-left: 5%;
+  padding-right: 10%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  color: var(--primary-color);
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid gray;
+  height: 25px;
+  width: 300px;
+}
+
+.form-message {
+  border-radius: 5px;
+  border: 1px solid rgb(211, 210, 210);
+  height: 100px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+/*
+ .label-messsage {
+   display: flex;
+   flex-direction: column;
+   margin-top: 50px;
+   color: var(--primary-color);
+ }
+ */
+
+.buttons {
+  width: 150px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 5%;
+}
+
+.col-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  padding-left: 5%;
+  padding-right: 10%;
+}
+
+.col-contact h2 {
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 50px;
+  padding-bottom: 2%;
+  text-align: center;
+}
+.col-contact p {
+  font-size: 22px;
+  text-align: center;
+  color: #b8b8b8;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2%;
+}
+
+.contact-links{
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 5%;
+  gap: 30px;
+}
+.contact-links a{
+
+  width: 100%;
+  padding-left: 5%;
+}
+.contact-links a:hover{
+  border-radius: 10px;
+  border: 1px solid rgb(211, 210, 210);
+}
+
+.col-contact img{
+  height: auto;
+  width: auto;
+  padding-right: 1%;
+}
+

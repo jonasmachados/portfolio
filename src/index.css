@@ -1,6 +1,11 @@
 :root{
-  --primary-color: #6C63FF;
-  --background-color: rgb(49, 49, 49);
+  /* --primary-color: #6C63FF; 
+  --primary-color: #0e04d8;
+  --primary-color: #377dff;
+  */
+  --primary-color: #0d62ff;
+  --second-color:#0745b9;
+  --background-color: rgb(255 255 255 / 10%);
 }
 
 body {

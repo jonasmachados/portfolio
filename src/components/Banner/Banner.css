@@ -11,7 +11,7 @@
     font-weight: 700;
     letter-spacing: 0.8px;
     padding: 8px 10px;
-    background: linear-gradient(90.21deg, #6C63FF -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    background: linear-gradient(90.21deg, var(--primary-color) -5.91%, var(--second-color) 111.58%);
     border: 1px solid rgba(255, 255, 255, 0.5);
     font-size: 20px;
     margin-bottom: 16px;
@@ -38,7 +38,7 @@
 }
 
 .banner button {
-    color: #6C63FF;
+    color: var(--primary-color);
     font-weight: 700;
     font-size: 20px;
     margin-top: 60px;

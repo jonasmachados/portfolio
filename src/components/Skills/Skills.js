@@ -3,7 +3,7 @@ import codeThink from "./../../assets/img/skills.svg";
 
 const listTitleStyle = {
   fontWeight: 900,
-  color: "#6C63FF",
+  color: "var(--primary-color)",
   marginBottom: "4px",
 };
 

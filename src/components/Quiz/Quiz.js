@@ -38,7 +38,7 @@ const Quiz = () => {
  
 
   return (
-    <IconContext.Provider value={{ color: "#6C63FF", size: "25px" }}>
+    <IconContext.Provider value={{ color: "var(--primary-color)", size: "25px" }}>
       <div className="accordionSection">
         <div className="box">
           {Data.map((item, index) => {
