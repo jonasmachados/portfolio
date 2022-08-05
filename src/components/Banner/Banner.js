@@ -10,8 +10,8 @@ const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const toRotate = ["Full Stack Developer", "React.js / Spring Boot Developer", "Web Developer"];
-  const period = 2000;
+  const toRotate = ["Full Stack Developer", "Web Developer"];
+  const period = 600;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -57,20 +57,17 @@ const Banner = () => {
               {`Hi! I'm Jonas`}<br></br>{" "}
               <span
                 className="txt-rotate"
-                dataPeriod="1000"
-                data-rotate='[ "Full Stack Developer", "React.js / Spring Boot Developer", "Web Developer" ]'
+                dataPeriod="600"
+                data-rotate='[ "Full Stack Developer", "Web Developer" ]'
               >
                 <span className="wrap">{text}</span>
               </span>
             </h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
+            <h2>Developer | React | SpringBoot</h2>
+            <p>🌱  I’m currently learning web development (NodeJS, ReactJS and SpringBoot).</p>
+            <p>🧑‍💻 I’am looking for jobnew opportunities to dev Java Jr.</p>
             <button onClick={() => console.log("connect")}>
-              Let’s Connect <ArrowRightCircle size={25} />
+              Resume <ArrowRightCircle size={25} />
             </button>
           </Col>
           <Col xs={12} md={6} xl={5}>

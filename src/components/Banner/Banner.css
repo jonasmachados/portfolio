@@ -1,60 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+SC&display=swap");
+
 .banner {
-    margin-top: 0;
-    padding: 260px 0 100px 0;
-    background-color: black;
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-color: black;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .banner .tagline {
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    padding: 8px 10px;
-    background: linear-gradient(90.21deg, var(--primary-color) -5.91%, var(--second-color) 111.58%);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    font-size: 20px;
-    margin-bottom: 16px;
-    display: inline-block;
-    color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(
+    90.21deg,
+    var(--primary-color) -5.91%,
+    var(--second-color) 111.58%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  color: #fff;
 }
 
 .banner h1 {
-    font-size: 65px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    line-height: 1;
-    margin-bottom: 20px;
-    display: block;
-    color: #fff;
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+  color: #fff;
+}
+
+.banner h2 {
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
 .banner p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    width: 96%;
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
 }
 
 .banner button {
-    color: var(--primary-color);
-    font-weight: 700;
-    font-size: 20px;
-    margin-top: 60px;
-    letter-spacing: 0.8px;
-    display: flex;
-    align-items: center;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
 }
 
 .banner button svg {
-    font-size: 25px;
-    margin-left: 10px;
-    transition: 0.3s ease-in-out;
-    line-height: 1;
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
 }
 
 .banner button:hover svg {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
+.wrap {
+  background-color: transparent;
+  border: 0;
+  padding-left: 0;
+}
+
+@media screen and (max-width: 740px) {
+  .banner h1 {
+    font-size: 32px;
+  }
+
+  .banner button {
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+    .banner h1 {
+      font-size: 32px;
+    }
+  
+    .banner button {
+      margin-bottom: 20%;
+    }
+  }
