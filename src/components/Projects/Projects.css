@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+SC&display=swap");
 
 .project {
-  padding-top: 2%;
+  padding: 80px 0;
+  position: static;
   background-color: var(--background-color);
+  padding-bottom: 120px;
 }
 .project h2 {
   font-family: "Amatic SC", cursive;
@@ -27,6 +29,7 @@
   border-radius: 10px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
+  margin-bottom: 24px;
 }
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
@@ -80,8 +83,8 @@
   border: 1px solid #fff;
   border-radius: 10px
 }
+/*
 .proj-imgbx {
-  padding-top: 5%;
   position: relative;
   border-radius: 30px;
   overflow: hidden;
@@ -125,13 +128,56 @@
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+*/
 
-.proj-imgbx img{
+.container-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: static;
-  width: 100%;
-  height: 20%;
-  opacity: 1;
+  width: 49%;
+  margin-bottom: 24px;
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  padding-left: 0;
+  padding-right: 0;
+ margin-left: 11px;
+}
 
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 30px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: initial;
+  margin-left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  height: 0.1px;
+}
+
+.container-project:hover .image {
+  opacity: 0.3;
+}
+
+.container-project:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px; 
+  padding-top: 75%;
 }
 
 
