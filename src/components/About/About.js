@@ -1,18 +1,17 @@
 import Quiz from "../Quiz/Quiz";
 import { Col, Container, Row } from "react-bootstrap";
 import "./About.css";
-import profile from "./../../assets/img/profile.png";
+import Profile from "../Profile/Profile";
 
 const About = () => {
   return (
     <section className="About" id="about">
       <Container>
         <Row>
-          <Col>
-            <h1>About Me!</h1>
-            <img src={profile} alt="Profile img" />
+          <Col xs={12} md={6} xl={5}>
+            <Profile />
           </Col>
-          <Col>
+          <Col xs={12} md={6} xl={5}>
             <Quiz />
           </Col>
         </Row>

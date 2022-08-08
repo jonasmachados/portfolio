@@ -3,14 +3,21 @@
 .About{
     background: #161C28;
 }
+
+.container-about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
 .About h1 {
   font-family: "Amatic SC", cursive;
-  text-align: center;
   font-weight: bold;
   font-size: 60px;
   padding-top: 30%;
   text-align: center;
-  padding-right: 40%;
 }
 
 .About p {
@@ -18,11 +25,6 @@
   color: #b8b8b8;
 }
 
-.About img {
-  border-radius: 50%;
-  width: 60%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  margin-top: 10%;
+.box {
+  margin-top: 0;
 }

@@ -64,8 +64,8 @@ const Banner = () => {
               </span>
             </h1>
             <h2>Developer | React | SpringBoot</h2>
-            <p>🌱  I’m currently learning web development (NodeJS, ReactJS and SpringBoot).</p>
-            <p>🧑‍💻 I’am looking for jobnew opportunities to dev Java Jr.</p>
+            <p>🌱 I’m currently learning web development (NodeJS, ReactJS and SpringBoot).</p>
+            <p>🧑‍💻 I’am looking for new job opportunities to dev Java Jr.</p>
             <button onClick={() => console.log("connect")}>
               Resume <ArrowRightCircle size={25} />
             </button>
