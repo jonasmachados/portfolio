@@ -8,7 +8,7 @@ const About = () => {
     <section className="About" id="about">
       <Container>
         <Row>
-          <Col xs={12} md={6} xl={5}>
+          <Col xs={12} md={7} xl={5}>
             <Profile />
           </Col>
           <Col xs={12} md={6} xl={5}>

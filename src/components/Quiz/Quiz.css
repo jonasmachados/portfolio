@@ -6,8 +6,8 @@
   position: static;
   height: 60vh;
   background: #161c28;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  margin-top: 30%;
+  margin-bottom: 30%;
 }
 
 .box {
@@ -50,9 +50,8 @@
   border-radius: 10px;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 900px) {
   .accordionSection {
-   /*margin-top: 6%;*/ margin-top: 20%;
-    margin-left: 30%;
+  
   }
 }
