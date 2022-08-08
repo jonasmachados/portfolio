@@ -10,52 +10,55 @@ const listTitleStyle = {
 const backendSkills = (
   <ul>
     <li style={listTitleStyle}>BACKEND</li>
-    <li>Scala - Java - SQl</li>
-    <li>Scala - SpringBoot - SQl</li>
+    <li>Java - SpringBoot</li>
+    
   </ul>
 );
 
 const frontendSkills = (
   <ul>
     <li style={listTitleStyle}>FRONTEND</li>
-    <li>React.js - HTML - CSS</li>
+    <li>HTML - CSS - Javascript</li>
+    <li>React.js</li>
   </ul>
 );
 
-const messagingSkills = (
+const AgileSkills = (
   <ul>
-    <li style={listTitleStyle}>MESSAGING</li>
-    <li>ActiveMQ</li>
+    <li style={listTitleStyle}>AGILE METHODOLOGY</li>
+    <li>Scrum</li>
   </ul>
 );
 
-const dataScienceSkills = (
+const dataBaseSkills = (
   <ul>
-    <li style={listTitleStyle}>DATA SCIENCE SKILLS</li>
-    <li>ELK Stack - Apache Spark</li>
+    <li style={listTitleStyle}>DATABASE</li>
+    <li>H2 Database - MySQL</li>
+    <li>PostgreSQL - MongoDB</li>
   </ul>
 );
 
-const buildToolsSkills = (
+const deploySkills = (
   <ul>
-    <li style={listTitleStyle}>BUILD TOOLS</li>
-    <li>Maven - SBT</li>
+    <li style={listTitleStyle}>DEPLOY</li>
+    <li>Heroku - Netlify</li>
   </ul>
 );
 
 const otherSkills = (
   <ul>
     <li style={listTitleStyle}>OTHER</li>
-    <li>Git - Docker - Jenkins - Json - XML</li>
+    <li>Git - GitHub - Json - XML</li>
+    <li>Postman - API Rest</li>
   </ul>
 );
 
 const totalSkills = [
   backendSkills,
   frontendSkills,
-  messagingSkills,
-  dataScienceSkills,
-  buildToolsSkills,
+  dataBaseSkills,
+  deploySkills,
+  AgileSkills,
   otherSkills,
 ];
 
@@ -63,12 +66,7 @@ const Skills = () => {
   return (
     <div className="Skills" id="skills">
       <h1>What about the Skills?</h1>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book.
-      </p>
+      <p>These are some of my skills and tools that i have knowledge of.</p>
       <div className="Container">
         <img src={codeThink} alt="CodeThinh img" />
         {totalSkills.map((Skills) => {

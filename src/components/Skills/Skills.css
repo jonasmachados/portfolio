@@ -30,7 +30,8 @@
   color: #fff;
   list-style-type: none;
   padding: 0;
-  
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .Skills .Container{
@@ -39,12 +40,13 @@
     margin-left: 10%;
     margin-right: 10%;
     justify-content: space-between;
+   
 }
 
 .Skills .Container .List{
     flex-basis: 33%;
     background-color: black;
-    box-shadow: 0 0 12px 4px white;
+    box-shadow: 0 0 10px 4px white;
     border-radius: 9px;
     margin-bottom: 2px ;
 }
@@ -66,3 +68,18 @@
         height: auto;
       }
 }
+
+@media (max-width:580px) {
+    .Skills .Container .List{
+        flex-basis: 50%;
+        box-shadow: 0 0 10px 4px white;
+        border-radius: 9px;
+        margin-bottom: 1% ;
+    }
+
+    .Skills {
+        padding-bottom: 10%;
+    }
+}
+
+
