@@ -1,0 +1,89 @@
+.container-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: static;
+  width: 48%;
+  margin-bottom: 24px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 11px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+
+}
+
+.middle {
+  background-color: rgb(255 255 255 / 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-right: 5%;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.text {
+  color: white;
+   width: 100%;
+  height: 100%;
+  font-size: 16px;
+
+}
+
+.footer img {
+  width: 40%;
+}
+.footer p {
+  margin-left: 1%;
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+.icons {
+  display: inline-block;
+  padding-left: 50%;
+}
+.icons a {
+  width: 30%;
+  height: 30%;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-skill {
+  display: flex;
+  padding-top: 5%;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1%;
+}
+
+h5 {
+  padding-top: 0%;
+  border-radius: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: rgb(49, 49, 49);
+}  
+
+

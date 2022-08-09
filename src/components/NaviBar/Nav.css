@@ -16,6 +16,7 @@
     align-items: center;
     padding:1rem;
     background-color:var(--primary-color);
+    opacity: 0.8;
    /* background-color: #03366994;
     background-color: #06376888; */
     
