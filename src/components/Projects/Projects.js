@@ -1,5 +1,5 @@
 import { Col, Container, Row, Tab, Nav } from "react-bootstrap";
-import ProjectCard2 from "../ProjectsCard/ProjectCard2";
+import ProjectCard from "../ProjectsCard/ProjectCard";
 import projImg1 from "../../assets/img/project-img1.png";
 import projImg2 from "../../assets/img/project-img2.png";
 import projImg3 from "../../assets/img/project-img3.png";
@@ -154,7 +154,7 @@ const Projects = () => {
                 <Tab.Pane eventKey="first">
                   <Row>
                     {page1.map((project, index) => {
-                      return <ProjectCard2 key={index} {...project} />;
+                      return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
                 </Tab.Pane>
@@ -162,7 +162,7 @@ const Projects = () => {
                 <Tab.Pane eventKey="second">
                   <Row>
                     {page2.map((project, index) => {
-                      return <ProjectCard2 key={index} {...project} />;
+                      return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
                 </Tab.Pane>
