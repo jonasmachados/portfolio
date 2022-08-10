@@ -6,11 +6,15 @@ import projImg3 from "../../assets/img/project-img3.png";
 import projImg4 from "../../assets/img/project-img4.png";
 import projImg5 from "../../assets/img/project-img5.png";
 import projImg6 from "../../assets/img/project-img6.png";
+import projImg7 from "../../assets/img/project-img7.png";
+import projImg8 from "../../assets/img/project-img8.png";
+import projImg9 from "../../assets/img/project-img9.png";
+import projImg10 from "../../assets/img/project-img10.png";
 
 import "./Projects.css";
 
 const Projects = () => {
-  const projects = [
+  const page1 = [
     {
       title: "DS Meta",
       description:
@@ -56,24 +60,69 @@ const Projects = () => {
       linkSite: "",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "App Web Oficina Thymeleaf",
+      description:
+        "This App help the conductors the will have control of task related the maintenance that were made in your car, making possible inform all services that were made in the car like a oil change, battery, air and oil filters, changing tires, alignment and balancing among others.",
       p_card1: "SpringBoot",
       p_card2: "Thymeleaf",
       p_card3: "PostgreSQL",
       imgUrl: projImg5,
-      linkGit: "",
+      linkGit: "https://github.com/jonasmachados/AppWebOficina-Thymeleaf",
       linkSite: "",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "App BookStore Thymeleaf",
+      description: "This App is a CRUD of books and category.",
       p_card1: "SpringBoot",
       p_card2: "Thymeleaf",
       p_card3: "PostgreSQL",
       imgUrl: projImg6,
+      linkGit: "https://github.com/jonasmachados/AppBookStore-Spring-Thymeleaf",
+      linkSite: "",
+    },
+  ];
+
+  const page2 = [
+    {
+      title: "API Send Email",
+      description:
+        "This app sends a message to customers using the Spring Boot Starter Mail frameword, the fron-tend can do the form using method POST to consume the API.",
+      p_card1: "SpringBoot",
+      p_card2: "Rest Api",
+      p_card3: "PostgreSQL",
+      imgUrl: projImg7,
       linkGit: "",
       linkSite: "",
+    },
+    {
+      title: "Workshop PostgreSQL",
+      description: "This is a Project of Spring Boot and JPA/Hibernate of course Java COMPLETO Programação Orientada a Objetos of Dr. Nelio Alves, Course Udemy. Project Backend of a control of order. The Client make a order then is fulfil the order include the prodcut that was order by Client.",
+      p_card1: "SpringBoot",
+      p_card2: "Rest Api",
+      p_card3: "PostgreSQL",
+      imgUrl: projImg8,
+      linkGit: "https://github.com/jonasmachados/workshop-postgreSQL",
+      linkSite: "",
+    },
+    {
+      title: "WorkShop MongoDB",
+      description: "This project was developer in SprinBoot and MongoDB, in that project was created a object Post that have several comments, each user can make a new Post and a new comment.",
+      p_card1: "SpringBoot",
+      p_card2: "Rest Api",
+      p_card3: "MongoDB",
+      imgUrl: projImg9,
+      linkGit: "https://github.com/jonasmachados/workshop-spring-boot-mongodb",
+      linkSite: "",
+    },
+    {
+      title: "Workshop Javafx",
+      description: "This project is a desktop application, developed in Javafx, a CRUD of seller and deppartment.",
+      p_card1: "Java",
+      p_card2: "Javafx",
+      p_card3: "MySQL",
+      imgUrl: projImg10,
+      linkGit: "https://github.com/jonasmachados/workshop-javafx-jdbc",
+      linkSite: "https://github.com/jonasmachados/workshop-javafx-jdbc",
     },
   ];
 
@@ -104,14 +153,18 @@ const Projects = () => {
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>
-                    {projects.map((project, index) => {
+                    {page1.map((project, index) => {
                       return <ProjectCard2 key={index} {...project} />;
                     })}
                   </Row>
                 </Tab.Pane>
 
                 <Tab.Pane eventKey="second">
-                  <p>Lorem ipsum</p>
+                  <Row>
+                    {page2.map((project, index) => {
+                      return <ProjectCard2 key={index} {...project} />;
+                    })}
+                  </Row>
                 </Tab.Pane>
 
                 <Tab.Pane eventKey="third">
