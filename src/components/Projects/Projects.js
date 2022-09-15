@@ -10,11 +10,22 @@ import projImg7 from "../../assets/img/project-img7.png";
 import projImg8 from "../../assets/img/project-img8.png";
 import projImg9 from "../../assets/img/project-img9.png";
 import projImg10 from "../../assets/img/project-img10.png";
+import projImg11 from "../../assets/img/project-img11.png";
 
 import "./Projects.css";
 
 const Projects = () => {
   const page1 = [
+    {
+      title: "Challenge TQI Evolution Fullstack 2022",
+      description: "Full Stack Project, management system of a bookstore. This app performs the registration of the books and the stock control.",
+      p_card1: "SpringBoot",
+      p_card2: "React",
+      p_card3: "PostgreSQL",
+      imgUrl: projImg6,
+      linkGit: "https://github.com/jonasmachados/tqi_evolution_fullstack_2022",
+      linkSite: "",
+    },
     {
       title: "DS Meta",
       description:
@@ -58,7 +69,7 @@ const Projects = () => {
       imgUrl: projImg4,
       linkGit: "https://github.com/jonasmachados/memory-game-naruto",
       linkSite: "",
-    },
+    },   
     {
       title: "App Web Oficina Thymeleaf",
       description:
@@ -68,16 +79,6 @@ const Projects = () => {
       p_card3: "PostgreSQL",
       imgUrl: projImg5,
       linkGit: "https://github.com/jonasmachados/AppWebOficina-Thymeleaf",
-      linkSite: "",
-    },
-    {
-      title: "App BookStore Thymeleaf",
-      description: "This App is a CRUD of books and category.",
-      p_card1: "SpringBoot",
-      p_card2: "Thymeleaf",
-      p_card3: "PostgreSQL",
-      imgUrl: projImg6,
-      linkGit: "https://github.com/jonasmachados/AppBookStore-Spring-Thymeleaf",
       linkSite: "",
     },
   ];
@@ -123,6 +124,16 @@ const Projects = () => {
       imgUrl: projImg10,
       linkGit: "https://github.com/jonasmachados/workshop-javafx-jdbc",
       linkSite: "https://github.com/jonasmachados/workshop-javafx-jdbc",
+    },
+    {
+      title: "App BookStore Thymeleaf",
+      description: "This App is a CRUD of books and category.",
+      p_card1: "SpringBoot",
+      p_card2: "Thymeleaf",
+      p_card3: "PostgreSQL",
+      imgUrl: projImg11,
+      linkGit: "https://github.com/jonasmachados/AppBookStore-Spring-Thymeleaf",
+      linkSite: "",
     },
   ];
 
