@@ -4,6 +4,8 @@ import headerImg from "../../assets/img/dev.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import './Banner.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Pdf from "../../assets/pdf/Curriculo.pdf";
+
 
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -43,7 +45,7 @@ const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setDelta(500);
-    } 
+    }
   };
 
   return (
@@ -65,10 +67,11 @@ const Banner = () => {
             </h1>
             <h2>Developer | React | SpringBoot</h2>
             <p>🌱 I’m currently learning web development (NodeJS, ReactJS and SpringBoot).</p>
-            <p>🧑‍💻 I’am looking for new job opportunities to dev Java Jr.</p>
-            <button onClick={() => console.log("connect")}>
+            <p>🧑‍💻 I’am looking for new job opportunities to Dev Full Stack Springboot | React.</p>
+            <button onClick={() => window.open(Pdf) & console.log("connect")}>
               Resume <ArrowRightCircle size={25} />
             </button>
+
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header Img" />
