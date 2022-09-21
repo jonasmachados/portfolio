@@ -7,15 +7,15 @@ const Quiz = () => {
   const Data  = [
     {
         question: 'Who am I ?',
-        answer:'I am Jonas Machado.'
+        answer:'My name is Jonas Machado, i am 32 years old and born in Brazil - MG, currently i am looking for new job opportunities as a developer.'
       },
       {
         question: 'What I do ?',
-        answer: 'I am interested in Web development, Mobile app development, Machine Learning and Problem solving.'
+        answer: 'I am interested in Web development, i develop web site using in the back-end Java and fron-tend React. '
       },
       {
         question: 'What is my educational background ?',
-        answer: 'I Apollo-gize.'
+        answer: ' I have a degree in Information Systems from Universitas. '
       },
   ];
 
@@ -30,15 +30,8 @@ const Quiz = () => {
     setClicked(index);
   };
 
-  /* 
-  toggle = () =>{
-
-  }; */
-
- 
-
   return (
-    <IconContext.Provider value={{ color: "var(--primary-color)", size: "25px" }}>
+    <IconContext.Provider value={{ color: "var(--primary-color)", size: "35px" }}>
       <div className="accordionSection">
         <div className="box">
           {Data.map((item, index) => {

@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   height: auto;
-  padding-top: 10%;
 }
 
 .img {
@@ -13,39 +12,18 @@
   height: auto;
   display: flex;
   justify-content: center;
-  margin-top: 10%;
 }
 
 .About h1 {
   font-family: "Amatic SC", cursive;
   font-weight: bold;
   font-size: 60px;
-  padding-top: 20%;
+  padding-top: 30%;
   text-align: center;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 800px) {
   .container-profile {
-    padding-top: 20%;
-  }
-  .box {
-  }
-}
-
-@media (min-width: 990px) {
-  .container-profile {
-    padding-top: 6%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .img {
-   
-  }
-}
-
-@media (min-width: 1400px) {
-  .img {
-
+    
   }
 }
