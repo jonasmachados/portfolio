@@ -3,6 +3,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./Nav.css";
 import '../../App.css';
 
+import { NavLink } from "react-router-dom";
+
 const Navbar = () => {
   const [click, setClick] = useState(false);
 
