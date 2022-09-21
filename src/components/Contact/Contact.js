@@ -43,29 +43,29 @@ const Contact = () => {
               <h2>Contact</h2>
               <p>Contact me by filling up this form</p>
               <div className="contact-links">
-              <a href="#">
-                <img src={iconPhone} alt="Phone" />
-                +55-(35)99128326
-              </a>
-              <a href="#">
-                <img src={iconMail} alt="Email" />
-                 jonasmachado.ti@gmail.com
-              </a>
-              <a href="#">
-                <img src={iconLocal} alt="Local" />
-                MG- Brazil
-              </a>
+                <a href="#">
+                  <img src={iconPhone} alt="Phone" />
+                  +55-(35)99128326
+                </a>
+                <a href="#">
+                  <img src={iconMail} alt="Email" />
+                  jonasmachado.ti@gmail.com
+                </a>
+                <a href="#">
+                  <img src={iconLocal} alt="Local" />
+                  MG- Brazil
+                </a>
               </div>
             </Row>
             <Row>
               <div className="social-icon">
-                <a href="#">
+                <a href="https://www.instagram.com/jonasmachado01/" target="_blank">
                   <img src={navIcon1} alt="Icon" />
                 </a>
-                <a href="#">
+                <a href="https://github.com/jonasmachados/" target="_blank">
                   <img src={iconGithub} alt="Icon" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/jonas-machados/" target="_blank">
                   <img src={navIcon3} alt="Icon" />
                 </a>
               </div>
