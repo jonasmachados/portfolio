@@ -17,14 +17,14 @@ import "./Projects.css";
 const Projects = () => {
   const page1 = [
     {
-      title: "Challenge TQI Evolution Fullstack 2022",
+      title: "Bookstore Inventory Control System",
       description: "Full Stack Project, management system of a bookstore. This app performs the registration of the books and the stock control.",
       p_card1: "SpringBoot",
       p_card2: "React",
       p_card3: "PostgreSQL",
       imgUrl: projImg6,
       linkGit: "https://github.com/jonasmachados/tqi_evolution_fullstack_2022",
-      linkSite: "",
+      linkSite: "https://bookstore-jonas.netlify.app",
     },
     {
       title: "DS Meta",
