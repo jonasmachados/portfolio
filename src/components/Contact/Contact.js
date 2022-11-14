@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import request from "../Utils/request";
 import "./Contact.css";
-import { Col, Container, Row, Tab, Nav } from "react-bootstrap";
-import navIcon1 from "../../assets/img/nav-icon1.png";
-import navIcon3 from "../../assets/img/nav-icon3.png";
-import iconGithub from "../../assets/img/iconGithub.png";
+import { Col, Container, Row } from "react-bootstrap";
 import iconPhone from "../../assets/img/phone.png";
 import iconMail from "../../assets/img/email.png";
 import iconLocal from "../../assets/img/maps.png";
@@ -54,19 +51,6 @@ const Contact = () => {
                 <a href="#">
                   <img src={iconLocal} alt="Local" />
                   MG- Brazil
-                </a>
-              </div>
-            </Row>
-            <Row>
-              <div className="social-icon">
-                <a href="https://www.instagram.com/jonasmachado01/" target="_blank">
-                  <img src={navIcon1} alt="Icon" />
-                </a>
-                <a href="https://github.com/jonasmachados/" target="_blank">
-                  <img src={iconGithub} alt="Icon" />
-                </a>
-                <a href="https://www.linkedin.com/in/jonas-machados/" target="_blank">
-                  <img src={navIcon3} alt="Icon" />
                 </a>
               </div>
             </Row>
