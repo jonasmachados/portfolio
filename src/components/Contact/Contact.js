@@ -1,3 +1,4 @@
+ /* eslint-disable */ 
 import React, { useState } from "react";
 import request from "../Utils/request";
 import "./Contact.css";
@@ -30,10 +31,28 @@ const Contact = () => {
       });
   };
 
+  (function () {
+    document.addEventListener("keyup", function (event) {
+      if (event.target.matches(".count-chars")) {
+        // get input value and length
+        const value = event.target.value;
+        const valueLength = event.target.value.length;
+        // get data value
+        const maxChars = parseInt(event.target.getAttribute("data-max-chars"));
+        const remainingChars = 0 + valueLength;
+        if (valueLength > maxChars) {
+          // limit chars to maxChars
+          event.target.value = value.substr(0, maxChars);
+          return;  //end function execution
+        }
+        event.target.nextElementSibling.innerHTML = remainingChars + " / 60";
+      }
+    })
+  })();
+
   return (
     <section className="container-contact" id="contact">
       <Container>
-        <br></br>
         <Row className="rows">
           <Col className="col-contact">
             <Row>
@@ -95,15 +114,16 @@ const Contact = () => {
 
               <div className="form-group mb-2">
                 <label className="form-label"> Message *</label>
-                <br></br>
-                <input
+                <textarea
+                  maxlength="60"
+                  data-max-chars="60"
                   type="text"
-                  placeholder=""
+                  placeholder="Type something here.."
                   name="text"
-                  className="form-message"
                   value={text}
                   onChange={(e) => setText(e.target.value)}
-                ></input>
+                  className="form-message count-chars "></textarea>
+                <div className="input-msg text-red"></div>
               </div>
 
               <button className="buttons" onClick={(e) => save(e)}>
@@ -112,8 +132,6 @@ const Contact = () => {
             </form>
           </Col>
         </Row>
-        <br></br>
-        <br></br>
       </Container>
     </section>
   );
