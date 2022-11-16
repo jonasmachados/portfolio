@@ -36,7 +36,7 @@ const Quiz = () => {
         <div className="box">
           {Data.map((item, index) => {
             return (
-              <>
+              <div key={index}>
                 <div className="wrap" onClick={() => toggle(index)} key={index}>
                   <h2>{item.question}</h2>
                   <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
@@ -46,7 +46,7 @@ const Quiz = () => {
                     <p>{item.answer}</p>
                   </div>
                 ) : null}
-              </>
+              </div>
             );
           })}
         </div>
