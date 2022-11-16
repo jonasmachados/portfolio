@@ -45,7 +45,7 @@ const Contact = () => {
           event.target.value = value.substr(0, maxChars);
           return;  //end function execution
         }
-        event.target.nextElementSibling.innerHTML = remainingChars + " / 60";
+        event.target.nextElementSibling.innerHTML = remainingChars + "/140";
       }
     })
   })();
@@ -115,8 +115,8 @@ const Contact = () => {
               <div className="form-group mb-2">
                 <label className="form-label"> Message *</label>
                 <textarea
-                  maxlength="60"
-                  data-max-chars="60"
+                  maxLength="140"
+                  data-max-chars="140"
                   type="text"
                   placeholder="Type something here.."
                   name="text"

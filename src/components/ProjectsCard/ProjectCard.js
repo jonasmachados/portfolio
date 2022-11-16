@@ -14,10 +14,10 @@ const ProjectCard = ({
   linkSite,
 }) => {
   return (
-    <div class="container-project">
-      <img src={imgUrl} alt="Avatar" class="image" />
-      <div class="middle">
-        <div class="text">
+    <div className="container-project">
+      <img src={imgUrl} alt="Avatar" className="image" />
+      <div className="middle">
+        <div className="text">
           <Row>
             <Col size={12} sm={8}>
               <h4>{title}</h4>
