@@ -18,12 +18,24 @@
   font-family: "Amatic SC", cursive;
   font-weight: bold;
   font-size: 60px;
-  padding-top: 30%;
+  padding-top: 20%;
   text-align: center;
 }
 
-@media (min-width: 800px) {
-  .container-profile {
-    
+@media (max-width: 1200px) {
+  .About h1 { 
+    padding-top: 40%; 
+  }
+}
+
+@media (max-width: 990px) {
+  .About h1 { 
+    padding-top: 60%; 
+  }
+}
+
+@media (max-width: 770px) {
+  .About h1 { 
+    padding-top: 20%; 
   }
 }
