@@ -13,7 +13,7 @@ const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const toRotate = ["Full Stack Developer", "Web Developer"];
-  const period = 600;
+  const period = 900;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -23,6 +23,7 @@ const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text]);
 
   const tick = () => {
@@ -59,8 +60,6 @@ const Banner = () => {
               {`Hi! I'm Jonas`}<br></br>{" "}
               <span
                 className="txt-rotate"
-                dataPeriod="600"
-                data-rotate='[ "Full Stack Developer", "Web Developer" ]'
               >
                 <span className="wrap">{text}</span>
               </span>

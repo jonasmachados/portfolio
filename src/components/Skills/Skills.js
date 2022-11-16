@@ -69,8 +69,8 @@ const Skills = () => {
       <p>These are some of my skills and tools that i have knowledge of.</p>
       <div className="Container">
         <img src={codeThink} alt="CodeThinh img" />
-        {totalSkills.map((Skills) => {
-          return <div className="List">{Skills}</div>;
+        {totalSkills.map((Skills, index) => { 
+          return <div key={index} className="List">{Skills}</div>;
         })}
       </div>
     </div>
