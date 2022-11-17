@@ -42,6 +42,7 @@ const deploySkills = (
   <ul>
     <li style={listTitleStyle}>DEPLOY</li>
     <li>Heroku - Netlify</li>
+    <li>Railway</li>
   </ul>
 );
 
