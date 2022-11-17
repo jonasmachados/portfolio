@@ -24,7 +24,7 @@ const Contact = () => {
       .then((response) => {
         console.log(response.data);
 
-        window.location.href = "/sending-email";
+        window.location.href = "/contact";
       })
       .catch((error) => {
         console.log(JSON.stringify(error));
