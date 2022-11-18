@@ -1,11 +1,13 @@
- /* eslint-disable */ 
-import React, { useState } from "react";
+/* eslint-disable */
+import React, { useState, useRef } from "react";
 import request from "../Utils/request";
 import "./Contact.css";
 import { Col, Container, Row } from "react-bootstrap";
 import iconPhone from "../../assets/img/phone.png";
 import iconMail from "../../assets/img/email.png";
 import iconLocal from "../../assets/img/maps.png";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const [ownerRef, setOwnerRef] = useState("");
@@ -14,20 +16,52 @@ const Contact = () => {
   const [text, setText] = useState("");
   const emailTo = "jonasmachado.ti@gmail.com";
 
+  const refName = useRef(null);
+  const refEmail = useRef(null);
+  const refSubject = useRef(null);
+  const refMessage = useRef(null);
+  
   const save = (e) => {
     e.preventDefault();
 
     const users = { ownerRef, emailFrom, emailTo, subject, text };
-
+    
     request
       .createUser(users)
       .then((response) => {
         console.log(response.data);
 
-        window.location.href = "/#contact";
+        toast.success('Message sent successfully!!', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+
+        //window.location.reload(false);
+
+        refName.current.value = '';
+        refEmail.current.value = '';
+        refSubject.current.value = '';
+        refMessage.current.value = '';
       })
       .catch((error) => {
         console.log(JSON.stringify(error));
+
+        toast.error('Error: Message was not sent!!!', {
+          position: "top-right",
+          autoClose: 9000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
       });
   };
 
@@ -61,7 +95,7 @@ const Contact = () => {
               <div className="contact-links">
                 <a href="#">
                   <img src={iconPhone} alt="Phone" />
-                  +55-(35)99128326
+                  +55(35)99128326
                 </a>
                 <a href="#">
                   <img src={iconMail} alt="Email" />
@@ -79,8 +113,9 @@ const Contact = () => {
               <div className="form-group mb-2">
                 <label className="form-label"> Your Name *</label>
                 <input
+                  ref={refName}
                   type="text"
-                  placeholder=""
+                  placeholder="Your Name"
                   name="ownerRef"
                   className="form-control"
                   value={ownerRef}
@@ -91,8 +126,9 @@ const Contact = () => {
               <div className="form-group mb-2">
                 <label className="form-label"> Your Email *</label>
                 <input
+                  ref={refEmail}
                   type="text"
-                  placeholder=""
+                  placeholder="Your Email"
                   name="emailFrom"
                   className="form-control"
                   value={emailFrom}
@@ -103,8 +139,9 @@ const Contact = () => {
               <div className="form-group mb-2">
                 <label className="form-label">Subject *</label>
                 <input
+                  ref={refSubject}
                   type="text"
-                  placeholder=""
+                  placeholder="Subject"
                   name="subject"
                   className="form-control"
                   value={subject}
@@ -115,6 +152,7 @@ const Contact = () => {
               <div className="form-group mb-2">
                 <label className="form-label"> Message *</label>
                 <textarea
+                  ref={refMessage}
                   maxLength="140"
                   data-max-chars="140"
                   type="text"
@@ -129,6 +167,7 @@ const Contact = () => {
               <button className="buttons" onClick={(e) => save(e)}>
                 Send Message{" "}
               </button>
+              <ToastContainer />
             </form>
           </Col>
         </Row>

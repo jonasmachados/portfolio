@@ -1,7 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from '../About/About.js';
-import Projects from '../Projects/Projects'
+import Projects from '../Projects/Projects';
 
 const RouteComponents = () => {
   return (
@@ -12,7 +12,6 @@ const RouteComponents = () => {
           <Routes>
             <Route path="/about" element={<About />} />
             <Route path="/project" element={<Projects />} />
-
 
           </Routes>
 

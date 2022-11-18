@@ -100,6 +100,12 @@ yarn add react-bootstrap-icons
 ```
 yarn add yup
 ```
+<p>React Toastify</p>
+
+```
+yarn add react-toastify
+```
+
 <br>
 <h3>Link of my WebSite: </h3>
 
