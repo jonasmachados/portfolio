@@ -28,6 +28,12 @@
   }
 }
 
+@media (min-width: 1400px) {
+  .About h1 { 
+    padding-top: 40%; 
+  }
+}
+
 @media (max-width: 990px) {
   .About h1 { 
     padding-top: 60%; 
