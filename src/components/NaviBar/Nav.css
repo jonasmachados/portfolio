@@ -61,22 +61,23 @@ a:hover{
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 0;
         flex-direction: column;
         justify-content: center;
-        background-color: var(--primary-color);
-        width:100%;
+        background-color: rgb(62, 116, 216);
+        width:60%;
         height: 100%;
         text-align: center;
-        transition: 0.4s;
+        transition: 0.5s;
+        opacity: 0.9;
     }
 
     .nav-menu.active {
-        left: 0;
+        left: 0px;
     }
 
     .nav-item {
-        margin: 1.5rem;
+        padding: .2rem;
         font-size: 5rem;
         justify-content: center;
     }
