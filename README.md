@@ -4,7 +4,10 @@
   <br>
 	<img src="https://user-images.githubusercontent.com/67349235/203625868-fb2784c7-4c08-4e29-b07f-a1ff941d4f6f.png">
 </p>
-<p align="center">See my portfolio here 👉🏼 https://jonasmachado.netlify.app/</p>
+
+<div align="center">
+<a href="https://jonasmachado.netlify.app"><img src="https://user-images.githubusercontent.com/67349235/203632304-85faf10f-9e87-403c-8bb3-0cc0a4915c89.png" alt="button"/></a>
+</div>
 
 <h2>About</h2>
 
