@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-	<img src="https://user-images.githubusercontent.com/67349235/190714615-7da07b32-7de5-497d-a56b-c4eb3f130e5f.gif">
+	<img src="https://user-images.githubusercontent.com/67349235/203625868-fb2784c7-4c08-4e29-b07f-a1ff941d4f6f.png">
 </p>
 <p align="center">See my portfolio here 👉🏼 https://jonasmachado.netlify.app/</p>
 
