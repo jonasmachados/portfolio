@@ -2,11 +2,11 @@
 
 <p align="center">
   <br>
-	<img src="https://user-images.githubusercontent.com/67349235/203625868-fb2784c7-4c08-4e29-b07f-a1ff941d4f6f.png">
+	<img src="https://user-images.githubusercontent.com/67349235/203813523-69588000-5312-47a4-b887-47d75c6cf72b.png">
 </p>
 
 <div align="center">
-<a href="https://jonasmachado.netlify.app"><img src="https://user-images.githubusercontent.com/67349235/203632304-85faf10f-9e87-403c-8bb3-0cc0a4915c89.png" alt="button"/></a>
+<a href="https://jonasmachado.netlify.app"><img src="https://user-images.githubusercontent.com/67349235/203813371-164a8a4e-08b2-4577-9c86-c4cb2c3feb58.png" alt="button"/></a>
 </div>
 
 <h2>About</h2>
