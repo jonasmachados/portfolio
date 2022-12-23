@@ -2,7 +2,6 @@
 import React, { useState, useRef } from "react";
 import request from "../Utils/request";
 import "./Contact.css";
-import { Col, Container, Row } from "react-bootstrap";
 import iconPhone from "../../assets/img/phone.png";
 import iconMail from "../../assets/img/email.png";
 import iconLocal from "../../assets/img/maps.png";
@@ -20,12 +19,12 @@ const Contact = () => {
   const refEmail = useRef(null);
   const refSubject = useRef(null);
   const refMessage = useRef(null);
-  
+
   const save = (e) => {
     e.preventDefault();
 
     const users = { ownerRef, emailFrom, emailTo, subject, text };
-    
+
     request
       .createUser(users)
       .then((response) => {
@@ -85,94 +84,91 @@ const Contact = () => {
   })();
 
   return (
-    <section className="container-contact" id="contact">
-      <Container>
-        <Row className="rows">
-          <Col className="col-contact">
-            <Row>
-              <h2>Contact</h2>
-              <p>Contact me by filling up this form</p>
-              <div className="contact-links">
-                <a href="#">
-                  <img src={iconPhone} alt="Phone" />
-                  +55(35)99128326
-                </a>
-                <a href="#">
-                  <img src={iconMail} alt="Email" />
-                  jonasmachado.ti@gmail.com
-                </a>
-                <a href="#">
-                  <img src={iconLocal} alt="Local" />
-                  MG- Brazil
-                </a>
-              </div>
-            </Row>
-          </Col>
-          <Col>
-            <form>
-              <div className="form-group mb-2">
-                <label className="form-label"> Your Name *</label>
-                <input
-                  ref={refName}
-                  type="text"
-                  placeholder="Your Name"
-                  name="ownerRef"
-                  className="form-control"
-                  value={ownerRef}
-                  onChange={(e) => setOwnerRef(e.target.value)}
-                ></input>
-              </div>
+    <div className="container-contact" id="contact">
 
-              <div className="form-group mb-2">
-                <label className="form-label"> Your Email *</label>
-                <input
-                  ref={refEmail}
-                  type="text"
-                  placeholder="Your Email"
-                  name="emailFrom"
-                  className="form-control"
-                  value={emailFrom}
-                  onChange={(e) => setEmailFrom(e.target.value)}
-                ></input>
-              </div>
+        <div className="div-contact">
+            <h2>Contact</h2>
+            <p>Contact me by filling up this form</p>
+            <div className="contact-links">
+              <a href="#">
+                <img src={iconPhone} alt="Phone" />
+                +55(35)99128326
+              </a>
+              <a href="#">
+                <img src={iconMail} alt="Email" />
+                jonasmachado.ti@gmail.com
+              </a>
+              <a href="#">
+                <img src={iconLocal} alt="Local" />
+                MG- Brazil
+              </a>
+            </div>
+        </div>
 
-              <div className="form-group mb-2">
-                <label className="form-label">Subject *</label>
-                <input
-                  ref={refSubject}
-                  type="text"
-                  placeholder="Subject"
-                  name="subject"
-                  className="form-control"
-                  value={subject}
-                  onChange={(e) => setSubject(e.target.value)}
-                ></input>
-              </div>
+        <div className="div-form">
+          <form>
+            <div>
+              <label className="form-label"> Your Name *</label>
+              <input
+                ref={refName}
+                type="text"
+                placeholder="Your Name"
+                name="ownerRef"
+                className="form-control"
+                value={ownerRef}
+                onChange={(e) => setOwnerRef(e.target.value)}
+              ></input>
+            </div>
 
-              <div className="form-group mb-2">
-                <label className="form-label"> Message *</label>
-                <textarea
-                  ref={refMessage}
-                  maxLength="140"
-                  data-max-chars="140"
-                  type="text"
-                  placeholder="Type something here.."
-                  name="text"
-                  value={text}
-                  onChange={(e) => setText(e.target.value)}
-                  className="form-message count-chars "></textarea>
-                <div className="input-msg text-red"></div>
-              </div>
+            <div>
+              <label className="form-label"> Your Email *</label>
+              <input
+                ref={refEmail}
+                type="text"
+                placeholder="Your Email"
+                name="emailFrom"
+                className="form-control"
+                value={emailFrom}
+                onChange={(e) => setEmailFrom(e.target.value)}
+              ></input>
+            </div>
 
-              <button className="buttons" onClick={(e) => save(e)}>
-                Send Message{" "}
-              </button>
-              <ToastContainer />
-            </form>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+            <div>
+              <label className="form-label">Subject *</label>
+              <input
+                ref={refSubject}
+                type="text"
+                placeholder="Subject"
+                name="subject"
+                className="form-control"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+              ></input>
+            </div>
+
+            <div>
+              <label className="form-label"> Message *</label>
+              <textarea
+                ref={refMessage}
+                maxLength="140"
+                data-max-chars="140"
+                type="text"
+                placeholder="Type something here.."
+                name="text"
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+                className="form-message count-chars "></textarea>
+              <div className="input-msg text-red"></div>
+            </div>
+
+            <button className="buttons" onClick={(e) => save(e)}>
+              Send Message{" "}
+            </button>
+            <ToastContainer />
+          </form>
+        </div>
+
+    </div>
   );
 };
 

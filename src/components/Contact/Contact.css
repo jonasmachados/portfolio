@@ -1,17 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+SC&display=swap");
 
 .container-contact {
-  background-color: var(--background-color);
-  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.rows {
+.div-contact {
   display: flex;
-  background-color: var(--primary-color);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 30px;
 }
 
-form {
+.div-contact h2 {
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.div-contact p {
+  font-size: 25px;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.contact-links a:hover {
+  border-bottom: 1px solid rgb(211, 210, 210);
+}
+
+.div-contact img {
+  height: auto;
+  width: auto;
+  padding-right: 5px;
+}
+
+.div-form form {
   height: auto;
   width: auto;
   display: flex;
@@ -19,27 +58,26 @@ form {
   justify-content: center;
   background-color: #fff;
   margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   padding-left: 5%;
-  padding-right: 10%;
+  padding-right: 5%;
 }
 
-label {
-  display: flex;
-  flex-direction: column;
+.div-form label {
   margin-top: 15px;
   color: var(--primary-color);
 }
 
-input {
+.div-form input {
   border-radius: 5px;
   border: 1px solid gray;
   height: 25px;
-  width: 300px;
+  width: 100%;
+  padding: 20px;
 }
 
-textarea {
+.div-form textarea {
   display: block;
   width: 100%;
   resize: none;
@@ -62,58 +100,6 @@ textarea {
   margin-bottom: 5%;
 }
 
-.col-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 30px;
-  padding-left: 5%;
-  padding-right: 10%;
-}
-
-.col-contact h2 {
-  font-family: "Amatic SC", cursive;
-  font-weight: bold;
-  font-size: 50px;
-  padding-bottom: 2%;
-  text-align: center;
-}
-.col-contact p {
-  font-size: 22px;
-  text-align: center;
-  color: #b8b8b8;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 2%;
-}
-
-.contact-links {
-  padding-top: 5%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 5%;
-  gap: 30px;
-}
-.contact-links a {
-  width: 100%;
-  padding-left: 5%;
-}
-.contact-links a:hover {
-  border-radius: 10px;
-  border: 1px solid rgb(211, 210, 210);
-}
-
-.col-contact img {
-  height: auto;
-  width: auto;
-  padding-right: 1%;
-}
-
 .form-message {
   display: block;
   width: 100%;
@@ -128,6 +114,7 @@ textarea {
   padding-top: 10px;
   padding-left: 70%;
 }
+
 .text-red {
   color: rgb(124, 121, 121);
 }
@@ -135,5 +122,18 @@ textarea {
 @media (max-width: 780px) {
   .input-msg {
     padding-left: 65%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .div-form form {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: 0px;
   }
 }
