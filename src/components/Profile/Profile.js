@@ -5,10 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Profile = () => {
     return (
-        <section className="container-profile">
+        <div className="container-profile">
         <h1>About Me!</h1>
-        <img src={profile_photo} alt="profile_photo" className="img" />
-        </section>
+        <img src={profile_photo} alt="profile_photo"/>
+        </div>
     );
   };
 

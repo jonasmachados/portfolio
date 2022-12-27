@@ -6,7 +6,7 @@
   height: auto;
 }
 
-.img {
+.container-profile img {
   border-radius: 50%;
   width: 45%;
   height: auto;
@@ -14,34 +14,29 @@
   justify-content: center;
 }
 
-.About h1 {
+.container-profile h1 {
   font-family: "Amatic SC", cursive;
   font-weight: bold;
   font-size: 60px;
-  padding-top: 20%;
+  padding-top: 0;
   text-align: center;
 }
 
-@media (min-width: 1600px) {
-  .About h1 { 
-    padding-top: 40%; 
+@media (min-width: 992px) {
+  .container-profile img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-profile h1 {
+    padding-top: 5%
   }
 }
 
 @media (min-width: 1400px) {
-  .About h1 { 
-    padding-top: 40%; 
-  }
-}
-
-@media (max-width: 990px) {
-  .About h1 { 
-    padding-top: 60%; 
-  }
-}
-
-@media (max-width: 770px) {
-  .About h1 { 
-    padding-top: 20%; 
+  .container-profile h1 {
+    padding-top: 10%
   }
 }

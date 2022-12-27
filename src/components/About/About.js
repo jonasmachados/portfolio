@@ -5,18 +5,10 @@ import Profile from "../Profile/Profile";
 
 const About = () => {
   return (
-    <section className="About" id="about">
-      <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={6}>
-            <Profile />
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <Quiz />
-          </Col>
-        </Row>
-      </Container>
-    </section>
+    <div className="container-about">
+      <div><Profile /></div>
+      <div><Quiz /></div>
+    </div>
   );
 };
 
