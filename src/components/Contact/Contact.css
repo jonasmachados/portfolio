@@ -43,6 +43,8 @@
 .contact-links a {
   text-decoration: none;
   color: #fff;
+  opacity: 0;
+  height: 0;
 }
 
 .contact-links a:hover {
@@ -140,5 +142,9 @@
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
     margin-top: 0px;
+  }
+  .contact-links a {
+    opacity: 1;
+    height: auto;
   }
 }
