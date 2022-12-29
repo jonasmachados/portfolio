@@ -12,23 +12,6 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li className="nav-item">
-          <a href="/#home"><AiFillHome/> Home</a>
-        </li>
-        <li className="nav-item">
-          <a href="/#about"><AiFillInfoCircle/> About</a>
-        </li>
-        <li className="nav-item">
-          <a href="/#skills"><GiSkills/> Skills</a>
-        </li>
-        <li className="nav-item">
-          <a href="/#project"><AiFillProject/> Projects</a>
-        </li>
-        <li className="nav-item">
-          <a href="/#contact"><AiFillContacts/> Contact</a>
-        </li>
-      </ul>
       <div className="hamburger" onClick={handleClick}>
         {click ? (
           <FaTimes size={30} style={{ color: "#f8f8f8" }} />
@@ -36,8 +19,26 @@ const Navbar = () => {
           <FaBars size={30} style={{ color: "#f8f8f8" }} />
         )}
       </div>
-      <div></div>
-      <div></div>
+
+      <div>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <a href="/#home"><AiFillHome /> Home</a>
+          </li>
+          <li className="nav-item">
+            <a href="/#about"><AiFillInfoCircle /> About</a>
+          </li>
+          <li className="nav-item">
+            <a href="/#skills"><GiSkills /> Skills</a>
+          </li>
+          <li className="nav-item">
+            <a href="/#project"><AiFillProject /> Projects</a>
+          </li>
+          <li className="nav-item">
+            <a href="/#contact"><AiFillContacts /> Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
