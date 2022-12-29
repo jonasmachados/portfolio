@@ -6,8 +6,8 @@
   position: static;
   height: 60vh;
   background: #161c28;
-  margin-bottom: 5%;
-  margin-top: 0;
+  margin-bottom: 50%;
+  margin-top: 10%;
 }
 
 .box {
@@ -53,4 +53,11 @@
   border-bottom: 1px solid var(--primary-color);
   position: initial;
   border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  .accordionSection {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }

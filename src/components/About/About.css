@@ -9,13 +9,7 @@
   padding: auto;
   background: #161c28;
   padding-top: 10%;
-  padding-bottom: 40%;
-}
-
-@media (min-width: 768px) {
-  .container-about {
-    padding-bottom: 20%;
-  }
+  padding-bottom: 20%;
 }
 
 @media (min-width: 992px) {
@@ -40,20 +34,3 @@
     padding-bottom: 5%;
   }
 }
-
-/*
-
-
-@media (min-width: 990px) {
-  .About h1 {
-    padding-top: 40%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .About h1 {
-    padding-top: 15%;
-  }
-}
-
-*/
