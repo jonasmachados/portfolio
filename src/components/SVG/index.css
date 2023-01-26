@@ -1,0 +1,13 @@
+header{
+    display: flex;
+    justify-content: center;
+}
+
+header .dev-svg {
+    width: 400px;
+    overflow: visible;
+    stroke: var(--primary-color); 
+    stroke-width: 1;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }

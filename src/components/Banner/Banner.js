@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion } from 'framer-motion';
-import headerImg from "../../assets/img/dev.svg";
 import './Banner.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Pdf from "../../assets/pdf/Curriculo.pdf";
+import SvgDev from "../SVG/SvgDev";
 
 const buttonVariants = {
   hidden: {
@@ -11,7 +11,7 @@ const buttonVariants = {
   },
   visible: {
     opacity: 1,
-    transition: { delay: 4.5 }
+    transition: { delay: 4.2 }
   },
   hover: {
     scale: 1.1,
@@ -104,7 +104,7 @@ const Banner = () => {
     "🧑‍💻 I’am looking for new job opportunities to Dev Full Stack Springboot | React."]
 
   return (
-    <div className="banner" >
+    <div className="banner" id="home" >
 
       <motion.div
         variants={bannerVariants}
@@ -154,7 +154,7 @@ const Banner = () => {
       </motion.div>
 
       <div>
-        <img src={headerImg} alt="Header Img" />
+        <SvgDev />
       </div>
     </div>
   );
