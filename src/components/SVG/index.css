@@ -6,7 +6,7 @@ header{
 header .dev-svg {
     width: 400px;
     overflow: visible;
-    stroke: var(--primary-color); 
+    stroke: transparent;
     stroke-width: 1;
     stroke-linejoin: round;
     stroke-linecap: round;

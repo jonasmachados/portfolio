@@ -11,7 +11,7 @@ const buttonVariants = {
   },
   visible: {
     opacity: 1,
-    transition: { delay: 4.2 }
+    transition: { delay: 4.1 }
   },
   hover: {
     scale: 1.1,
