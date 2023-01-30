@@ -1,13 +1,19 @@
-header{
-    display: flex;
-    justify-content: center;
+header {
+  display: flex;
+  justify-content: center;
 }
 
 header .dev-svg {
-    width: 400px;
-    overflow: visible;
-    stroke: transparent;
-    stroke-width: 1;
-    stroke-linejoin: round;
-    stroke-linecap: round;
+  width: 400px;
+  overflow: visible;
+  stroke: transparent;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+@media (max-width: 768px) {
+  header .dev-svg {
+    width: 300px;
   }
+}
