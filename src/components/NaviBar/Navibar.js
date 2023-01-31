@@ -3,7 +3,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { AiFillHome, AiFillInfoCircle, AiFillProject, AiFillContacts } from 'react-icons/ai';
 import { GiSkills } from 'react-icons/gi';
 import "./Nav.css";
-import '../../App.css';
+
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -12,15 +13,23 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="hamburger" onClick={handleClick}>
+      <motion.div className="hamburger" onClick={handleClick}
+        initial={{ y: -250 }}
+        animate={{ y: 0 }}
+        transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
+      >
         {click ? (
           <FaTimes size={30} style={{ color: "#f8f8f8" }} />
         ) : (
           <FaBars size={30} style={{ color: "#f8f8f8" }} />
         )}
-      </div>
+      </motion.div>
 
-      <div>
+      <motion.div
+        initial={{ y: -200 }}
+        animate={{ y: 0 }}
+        transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
+      >
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <a href="/#home"><AiFillHome /> Home</a>
@@ -38,7 +47,7 @@ const Navbar = () => {
             <a href="/#contact"><AiFillContacts /> Contact</a>
           </li>
         </ul>
-      </div>
+      </motion.div>
     </div>
   );
 };

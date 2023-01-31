@@ -8,8 +8,6 @@
   padding: 10%;
   padding: auto;
   background: #161c28;
-  padding-top: 10%;
-  padding-bottom: 20%;
 }
 
 @media (min-width: 992px) {
@@ -20,6 +18,8 @@
     padding-bottom: 10%;
   }
 }
+
+/*
 
 @media (min-width: 1200px) {
   .container-about {
@@ -34,3 +34,4 @@
     padding-bottom: 5%;
   }
 }
+*/

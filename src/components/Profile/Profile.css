@@ -4,14 +4,13 @@
   align-items: center;
   justify-content: center;
   height: auto;
+  z-index: 10;
 }
 
 .container-profile img {
   border-radius: 50%;
-  width: 45%;
+  width: 50%;
   height: auto;
-  display: flex;
-  justify-content: center;
 }
 
 .container-profile h1 {
@@ -19,14 +18,8 @@
   font-weight: bold;
   font-size: 60px;
   padding-top: 0;
+  padding-bottom: 20px;
   text-align: center;
-}
-
-@media (min-width: 992px) {
-  .container-profile img {
-    width: 50%;
-    height: auto;
-  }
 }
 
 @media (min-width: 1200px) {
