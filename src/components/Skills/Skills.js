@@ -1,6 +1,20 @@
 import "./Skills.css";
-import codeThink from "./../../assets/img/skills.svg";
 import SvgBrain from "../SVG/SvgBrain";
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { delay: 0.5, duration: 1 }
+  },
+  exit: {
+    x: "-100vh",
+    transition: { ease: 'easeInOut' }
+  }
+};
 
 const listTitleStyle = {
   fontWeight: 900,
@@ -70,12 +84,17 @@ const Skills = () => {
       <h1>What about the Skills?</h1>
       <p>These are some of my skills and tools that i have knowledge of.</p>
       <SvgBrain />
-      <div className="Container">
+      <div className="box-skills"
+      >
         {totalSkills.map((Skills, index) => {
-          return <div key={index} className="List">{Skills}</div>;
+          return <motion.div key={index} className="list"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            exit="exit">{Skills}</motion.div>;
         })}
       </div>
-    </div>
+    </div >
   );
 };
 
