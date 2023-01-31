@@ -12,6 +12,15 @@ header .dev-svg {
   stroke-linecap: round;
 }
 
+header .skills-svg {
+  width: 400px;
+  overflow: #fff;
+  stroke: transparent;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
 @media (max-width: 768px) {
   header .dev-svg {
     width: 300px;

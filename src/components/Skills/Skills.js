@@ -1,5 +1,6 @@
 import "./Skills.css";
 import codeThink from "./../../assets/img/skills.svg";
+import SvgBrain from "../SVG/SvgBrain";
 
 const listTitleStyle = {
   fontWeight: 900,
@@ -11,7 +12,7 @@ const backendSkills = (
   <ul>
     <li style={listTitleStyle}>BACKEND</li>
     <li>Java - SpringBoot</li>
-    
+
   </ul>
 );
 
@@ -68,9 +69,9 @@ const Skills = () => {
     <div className="Skills" id="skills">
       <h1>What about the Skills?</h1>
       <p>These are some of my skills and tools that i have knowledge of.</p>
+      <SvgBrain />
       <div className="Container">
-        <img src={codeThink} alt="CodeThinh img" />
-        {totalSkills.map((Skills, index) => { 
+        {totalSkills.map((Skills, index) => {
           return <div key={index} className="List">{Skills}</div>;
         })}
       </div>
