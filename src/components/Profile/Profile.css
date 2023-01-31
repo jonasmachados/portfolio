@@ -9,7 +9,7 @@
 
 .container-profile img {
   border-radius: 50%;
-  width: 50%;
+  width: 35%;
   height: auto;
 }
 
@@ -25,6 +25,9 @@
 @media (min-width: 1200px) {
   .container-profile h1 {
     padding-top: 5%
+  }
+  .container-profile img {
+    width: 40%;
   }
 }
 

@@ -2,6 +2,20 @@ import React, { useState } from "react";
 import { IconContext } from "react-icons";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import "./Quiz.css"
+import { motion } from 'framer-motion';
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { delay: 0.5, duration: 1 }
+  },
+  exit: {
+    x: "-100vh",
+    transition: { ease: 'easeInOut' }
+  }
+};
 
 const Quiz = () => {
   const Data = [
@@ -32,7 +46,11 @@ const Quiz = () => {
 
   return (
     <IconContext.Provider value={{ color: "var(--primary-color)", size: "35px" }}>
-      <div className="accordionSection">
+      <motion.div className="accordionSection"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        exit="exit">
         <div className="box">
           {Data.map((item, index) => {
             return (
@@ -50,7 +68,7 @@ const Quiz = () => {
             );
           })}
         </div>
-      </div>
+      </motion.div>
     </IconContext.Provider>
   );
 };
