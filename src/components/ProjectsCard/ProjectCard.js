@@ -1,7 +1,24 @@
 import "./ProjectsCard.css";
-import { Row, Col } from "react-bootstrap";
 import navIcon1 from "../../assets/img/iconGithub.png";
 import navIcon2 from "../../assets/img/iconsLink.png";
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { delay: 0.5, duration: 1 }
+  },
+  hover: {
+    opacity: 0.7,
+  },
+  exit: {
+    x: "-100vh",
+    transition: { ease: 'easeInOut' }
+  }
+};
 
 const ProjectCard = ({
   title,
@@ -14,34 +31,33 @@ const ProjectCard = ({
   linkSite,
 }) => {
   return (
-    <div className="container-project">
+    <motion.div className="container-project"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      whileHover="hover"
+      exit="exit">
       <img src={imgUrl} alt="Avatar" className="image" />
       <div className="middle">
-        <div className="text">
-          <Row>
-            <Col size={12} sm={8}>
-              <h4>{title}</h4>
-            </Col>
-            <Col size={2} sm={4}>
-              <div className="icons">
-                <a href={linkGit}>
-                  <img src={navIcon1} alt="Icon" />
-                </a>
-                <a href={linkSite}>
-                  <img src={navIcon2} alt="Icon" />
-                </a>
-              </div>
-            </Col>
-          </Row>
-          <div className="card-skill">
-            <h5>{p_card1}</h5>ㅤ
-            <h5>{p_card2}</h5>ㅤ
-            <h5>{p_card3}</h5>ㅤ
-          </div>
-          <span>{description}</span>
+        <h4>{title}</h4>
+        
+        <div className="icons">
+          <a href={linkGit}>
+            <img src={navIcon1} alt="Icon" />
+          </a>
+          <a href={linkSite}>
+            <img src={navIcon2} alt="Icon" />
+          </a>
         </div>
+
+        <div className="card-skill">
+          <h5>{p_card1}</h5>ㅤ
+          <h5>{p_card2}</h5>ㅤ
+          <h5>{p_card3}</h5>ㅤ
+        </div>
+        <span>{description}</span>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

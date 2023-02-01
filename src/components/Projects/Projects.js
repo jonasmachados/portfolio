@@ -138,7 +138,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="project" id="project">
+    <div className="project" id="project">
       <Container>
         <Row>
           <Col>
@@ -157,13 +157,11 @@ const Projects = () => {
                 <Nav.Item>
                   <Nav.Link eventKey="second">Page Two</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Page Three</Nav.Link>
-                </Nav.Item>
+              
               </Nav>
               <Tab.Content>
                 <Tab.Pane eventKey="first">
-                  <Row>
+                  <Row style={{gap: 72, margin: 0 }}>
                     {page1.map((project, index) => {
                       return <ProjectCard key={index} {...project} />;
                     })}
@@ -171,22 +169,19 @@ const Projects = () => {
                 </Tab.Pane>
 
                 <Tab.Pane eventKey="second">
-                  <Row>
+                  <Row style={{gap: 72, padding: 0 }}>
                     {page2.map((project, index) => {
                       return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
                 </Tab.Pane>
 
-                <Tab.Pane eventKey="third">
-                  <p>Lorem ipsum</p>
-                </Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
         </Row>
       </Container>
-    </section>
+    </div>
   );
 };
 

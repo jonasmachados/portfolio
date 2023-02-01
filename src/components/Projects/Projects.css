@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+SC&display=swap");
 
 .project {
-  padding: 2% 0;
-  position: static;
   background-color: var(--background-color);
-  padding-bottom: 120px;
+  padding: 30px 0;
+  z-index: 10;
 }
 
 .project h2 {
@@ -16,6 +15,7 @@
   padding-right: 25%;
   padding-bottom: 2%;
 }
+
 .project p {
   font-size: 30px;
   text-align: center;
@@ -24,8 +24,9 @@
   padding-right: 10%;
   padding-bottom: 2%;
 }
+
 .project .nav.nav-pills {
-  width: 72%;
+  width: 90%;
   margin: 0 auto;
   border-radius: 10px;
   background-color: rgb(255 255 255 / 10%);
@@ -33,26 +34,25 @@
   margin-bottom: 5%;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  width: 43%;
 }
 
 .project .nav.nav-pills .nav-link {
   background-color: rgb(49, 49, 49);
   border-radius: 10px;
-  padding: 17px 1;
+  padding: 5px;
   color: #fff;
   width: 100%;
   font-size: 25px;
   letter-spacing: 0.8px;
   font-weight: 500;
-  position: relative;
   transition: 0.3s ease-in-out;
   text-align: center;
   z-index: 0;
 }
+
 .project .nav.nav-pills .nav-link::before {
   content: "";
-  position: absolute;
   width: 0;
   height: 100%;
   top: 0;
@@ -72,7 +72,6 @@
   border: 1px solid rgb(49, 49, 49);
 }
 
-/* HERE HERE HERE*/
 .nav-link#projects-tabs-tab-first {
   position: static;
   border: 1px solid #fff;
@@ -83,24 +82,15 @@
   border: 1px solid #fff;
   border-radius: 10px;
 }
-.nav-link#projects-tabs-tab-third {
-  position: static;
-  border: 1px solid #fff;
-  border-radius: 10px;
-}
-@media (max-width: 940px) {
-  .project .nav.nav-pills {
-    width: auto;
-    background-color: transparent;
-    margin-bottom: 5%;
-    padding-left: 0%;
-  }
+
+@media (min-width: 768px) {
   .project .nav.nav-pills .nav-item {
-    width: 25%;
-    margin-left: 0; 
+    width: 46%;
   }
-  .project .nav.nav-pills .nav-link {
-    padding: 0;
+}
+
+@media (min-width: 992px) {
+  .project .nav.nav-pills .nav-item {
+    width: 47%;
   }
- 
 }
