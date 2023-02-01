@@ -7,6 +7,21 @@ import iconMail from "../../assets/img/email.png";
 import iconLocal from "../../assets/img/maps.png";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+  hidden: {
+      opacity: 0,
+  },
+  visible: {
+      opacity: 1,
+      transition: { delay: 0.5, duration: 1 }
+  },
+  exit: {
+      x: "-100vh",
+      transition: { ease: 'easeInOut' }
+  }
+};
 
 const Contact = () => {
   const [ownerRef, setOwnerRef] = useState("");
@@ -84,8 +99,12 @@ const Contact = () => {
   })();
 
   return (
-    <div className="container-contact" id="contact">
-
+    <motion.div className="container-contact" id="contact"
+    variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            exit="exit"
+            >
         <div className="div-contact">
             <h2>Contact</h2>
             <p>Contact me by filling up this form</p>
@@ -168,7 +187,7 @@ const Contact = () => {
           </form>
         </div>
 
-    </div>
+    </motion.div>
   );
 };
 
