@@ -4,7 +4,6 @@
   flex-direction: column;
   top: 0;
   width: 100%;
-  height: auto;
   background-color: var(--primary-color);
   z-index: 1;
 }
@@ -14,10 +13,11 @@
 }
 
 .navbar a {
+  padding: 0 20px;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   font-size: 30px;
-  font-family: "Amatic SC", cursive;
+  font-family: cursive;
 }
 
 .navbar a:hover {
@@ -38,10 +38,6 @@
   transition: width 0.5s ease-out;
   background-color: var(--primary-color);
   padding-right: 50px;
-}
-
-.nav-item {
-  margin: 10px;
 }
 
 .hamburger {
