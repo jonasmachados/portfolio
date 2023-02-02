@@ -4,7 +4,7 @@ header {
 }
 
 header .dev-svg {
-  width: 400px;
+  width: 300px;
   overflow: visible;
   stroke: transparent;
   stroke-width: 1;
@@ -21,8 +21,8 @@ header .skills-svg {
   stroke-linecap: round;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 992px) {
   header .dev-svg {
-    width: 300px;
+    width: 500px;
   }
 }

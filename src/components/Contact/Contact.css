@@ -21,18 +21,6 @@
   border-radius: 30px;
 }
 
-.div-contact h2 {
-  font-family: "Amatic SC", cursive;
-  font-weight: bold;
-  font-size: 50px;
-}
-
-.div-contact p {
-  font-size: 25px;
-  text-align: center;
-  padding: 20px;
-}
-
 .contact-links {
   display: flex;
   flex-direction: column;

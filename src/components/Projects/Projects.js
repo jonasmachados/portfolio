@@ -142,7 +142,7 @@ const Projects = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Projects I Built!</h2>
+            <h1>Projects I Built!</h1>
             <p>
               Here are some of the projects i have built{" "}
               <span style={{ backgroundColor: "var(--primary-color)" }}>

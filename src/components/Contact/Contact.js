@@ -106,7 +106,7 @@ const Contact = () => {
             exit="exit"
             >
         <div className="div-contact">
-            <h2>Contact</h2>
+            <h1>Contact</h1>
             <p>Contact me by filling up this form</p>
             <div className="contact-links">
               <a href="#">

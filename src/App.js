@@ -1,4 +1,3 @@
-import './App.css';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Banner from './components/Banner/Banner';
@@ -9,15 +8,15 @@ import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <Banner />
       <About />
       <Skills />
-      <Projects /> 
+      <Projects />
       <Contact />
-      <Footer />  
-    </div>
+      <Footer />
+    </>
   );
 }
 
