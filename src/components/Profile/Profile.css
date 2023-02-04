@@ -13,17 +13,13 @@
   height: auto;
 }
 
-@media (min-width: 1200px) {
-  .container-profile h1 {
-    padding-top: 5%
-  }
+@media (min-width:992px) {
   .container-profile img {
-    width: 40%;
+    width: 30%;
   }
 }
-
 @media (min-width: 1400px) {
-  .container-profile h1 {
-    padding-top: 10%
+  .container-profile img {
+    width: 25%;
   }
 }
