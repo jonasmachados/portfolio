@@ -12,7 +12,7 @@ const containerVariants = {
     transition: { delay: 0.5, duration: 1 }
   },
   hover: {
-    opacity: 0.7,
+    scale: 1.1,
   },
   exit: {
     x: "-100vh",
