@@ -27,11 +27,11 @@ const buttonVariants = {
 
 const bannerVariants = {
   hidden: {
-    scale: 0.9
+    opacity: 0,
   },
   visible: {
-    scale: 1,
-    transition: { duration: 1.3 },
+    opacity: 1,
+    transition: { delay: 1.3, duration: 1.3  }
   },
   exit: {
     x: "-100vh",
