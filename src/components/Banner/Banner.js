@@ -31,7 +31,7 @@ const bannerVariants = {
   },
   visible: {
     opacity: 1,
-    transition: { delay: 1.3, duration: 1.3  }
+    transition: { delay: 1.3, duration: 1.3 }
   },
   exit: {
     x: "-100vh",
@@ -51,7 +51,7 @@ const listVariants = {
 };
 
 const item = {
-  hidden: {  scale: 0 },
+  hidden: { scale: 0 },
   visible: {
     scale: 1,
     paddingBottom: 30
@@ -129,15 +129,11 @@ const Banner = () => {
           initial="hidden"
           animate="visible"
         >
-          {listInfo.map((index) => {
+          {listInfo.map((text, index) => {
             return (
-              <>
-                <motion.li
-                  variants={item}
-                >
-                  {index}
-                </motion.li>
-              </>
+              <motion.li key={index} variants={item}>
+                {text}
+              </motion.li>
             );
           })}
         </motion.ul>
