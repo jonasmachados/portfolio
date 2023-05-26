@@ -13,6 +13,11 @@
   height: auto;
 }
 
+.container-profile h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
 @media (min-width:992px) {
   .container-profile img {
     width: 30%;

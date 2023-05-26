@@ -1,28 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cormorant+SC&display=swap");
-
 .project {
   background-color: var(--background-color);
   padding: 30px 0;
   z-index: 10;
 }
 
+.project h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
 .project .nav.nav-pills {
   width: 90%;
   margin: 0 auto;
   border-radius: 10px;
-  background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
   margin-bottom: 5%;
 }
 .project .nav.nav-pills .nav-item {
-  width: 50%;
+  width: 45%;
+  margin: 10px;
 }
 
 .project .nav.nav-pills .nav-link {
-  background-color: rgb(49, 49, 49);
+  background-color: var(--second-color);
   border-radius: 10px;
   padding: 5px;
-  color: #fff;
+  color: var(--text-main);
   width: 100%;
   font-size: 25px;
   letter-spacing: 0.8px;
@@ -48,7 +51,7 @@
   background: linear-gradient(
     90.21deg,
     var(--primary-color) -5.91%,
-    var(--second-color) 111.58%
+    var(--third-color) 111.58%
   );
   border: 1px solid rgb(49, 49, 49);
 }

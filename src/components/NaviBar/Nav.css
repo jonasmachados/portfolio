@@ -4,7 +4,7 @@
   flex-direction: column;
   top: 0;
   width: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--background-color);
   z-index: 1;
 }
 
@@ -15,7 +15,7 @@
 .navbar a {
   padding: 0 20px;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--text-main);
   font-size: 30px;
   font-family: cursive;
 }

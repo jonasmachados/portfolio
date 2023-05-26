@@ -19,9 +19,9 @@ const Navbar = () => {
         transition={{ delay: 0.2, type: 'spring', stiffness: 120 }}
       >
         {click ? (
-          <FaTimes size={30} style={{ color: "#f8f8f8" }} />
+          <FaTimes size={30} style={{ color: "var(--text-main) " }} />
         ) : (
-          <FaBars size={30} style={{ color: "#f8f8f8" }} />
+          <FaBars size={30} style={{ color: "var(--text-main) " }} />
         )}
       </motion.div>
 

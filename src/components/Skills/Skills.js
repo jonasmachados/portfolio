@@ -18,7 +18,7 @@ const containerVariants = {
 
 const listTitleStyle = {
   fontWeight: 900,
-  color: "var(--primary-color)",
+  color: "var(--text-main)",
   marginBottom: "4px",
 };
 

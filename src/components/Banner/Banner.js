@@ -74,7 +74,6 @@ const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text]);
 
   const tick = () => {
@@ -115,7 +114,7 @@ const Banner = () => {
         <span className="tagline">Welcome to my Portfolio</span>
         <h1>
           {" "}
-          {`Hi! I'm Jonas`}<br></br>{" "}
+          Hi! I'm <span className="jonas">Jonas</span><br></br>{" "}
           <span
             className="txt-rotate"
           >

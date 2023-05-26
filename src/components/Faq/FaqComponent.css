@@ -1,10 +1,9 @@
 .faq-item {
   position: relative;
-  border: 1px solid var(--background-color);
   border-radius: 8px;
   margin-bottom: 10px;
   padding: 10px;
-  background-color: var(--primary-color);
+  background-color: var(--second-color);
 }
 
 .expand-button {
@@ -18,7 +17,7 @@
 }
 
 .expand-icon {
-  color: #fff;
+  color: var(--third-color);
   vertical-align: middle;
 }
 
@@ -30,15 +29,14 @@
 .p_title {
   padding: 0 5px;
   margin: 0;
-  color: #fff;
   font-size: 18px;
+  font-weight: bold;
 }
 
 .p_content {
   padding: 0 5px;
   text-align: left;
   margin: 0;
-  color: #b8b8b8;
   font-size: 18px;
 }
 
