@@ -1,24 +1,19 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import About from '../About/About.js';
-import Projects from '../Projects/Projects';
+import ProjectPage from '../Pages/ProjectPage.js';
+import HomePage from '../Pages/HomPage.js'
 
 const RouteComponents = () => {
   return (
-    <section>
+    <>
       <Router>
-        <div >
-
-          <Routes>
-            <Route path="/about" element={<About />} />
-            <Route path="/project" element={<Projects />} />
-
-          </Routes>
-
-        </div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          
+          <Route path="/project/:id" element={<ProjectPage />} />
+        </Routes>
       </Router>
-
-    </section>
+    </>
   );
 };
 

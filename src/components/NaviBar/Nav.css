@@ -1,4 +1,4 @@
-.navbar {
+.nav-bar {
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -8,11 +8,11 @@
   z-index: 1;
 }
 
-.navbar ul {
+.nav-bar ul {
   list-style-type: none;
 }
 
-.navbar a {
+.nav-bar a {
   padding: 0 20px;
   text-decoration: none;
   color: var(--text-main);
@@ -20,8 +20,8 @@
   font-family: cursive;
 }
 
-.navbar a:hover {
-  border-bottom: 3px solid #fff;
+.nav-bar a:hover {
+  color: var(--background-color);
 }
 
 .nav-menu {
@@ -49,6 +49,14 @@
 @media (min-width: 992px) {
   .hamburger {
     display: none;
+  }
+
+  .nav-bar {
+    align-items: center;
+  }
+
+  .nav-bar a:hover {
+    color: var(--primary-color);
   }
 
   .nav-menu {

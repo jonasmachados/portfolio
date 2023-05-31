@@ -21,13 +21,19 @@ const containerVariants = {
 };
 
 const ProjectCard = ({ project }) => {
+
+    const openProjectPage = () => {
+        window.location.href = `/project/${project.id}`;
+    };
+
     return (
         <motion.div className="container-project-card"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             whileHover="hover"
-            exit="exit">
+            exit="exit"
+            onClick={openProjectPage}>
             <img src={project.imgUrl} alt="img-project" />
             <div className="content-project-card">
                 <h2>{project.title}</h2>

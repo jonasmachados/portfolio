@@ -48,7 +48,8 @@ const Projects = () => {
             </p>
             <div className="container-projects">
                 {allProjects.slice(0, visibleProjects).map((project, index) => (
-                    <ProjectCard key={index} project={project} />
+                    <ProjectCard key={index} 
+                    project={project}  />
                 ))}
             </div>
             <div className="button-container-project">
@@ -59,7 +60,7 @@ const Projects = () => {
                         animate="visible"
                         whileHover="hover"
                         className="load-button" onClick={loadMoreProjects}>
-                        <FaChevronDown /> Carregar Mais
+                        <FaChevronDown /> Load More
                     </motion.button>
                 )}
                 {visibleProjects > 4 && (
@@ -70,7 +71,7 @@ const Projects = () => {
                         whileHover="hover"
                         className="load-button"
                         onClick={loadLessProjects}>
-                        <FaChevronUp /> Carregar Menos
+                        <FaChevronUp /> Load Less
                     </motion.button>
                 )}
             </div>

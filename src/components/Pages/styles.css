@@ -1,0 +1,90 @@
+.container-project-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 20px;
+}
+
+.container-project-page img {
+  width: 100%;
+  height: 60%;
+  border-radius: 8px;
+}
+
+.container-project-page h1 {
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: 900;
+  padding: 20px 0;
+  text-transform: capitalize;
+}
+
+.container-project-page a {
+  color: var(--text-main);
+  font-size: 26px;
+  text-decoration: none;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.container-project-page a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+
+.icon {
+  margin-left: 5px;
+}
+
+.container-cards {
+  display: flex;
+  margin-left: 0;
+  align-self: flex-start;
+}
+
+.container-cards h2 {
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 20px 20px 20px 0;
+  background-color: var(--primary-color);
+}
+
+.description {
+  margin: 40px 0;
+}
+
+.description p {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .container-project-page {
+    margin: 100px 40px;
+  }
+  .container-project-page img {
+    width: 80%;
+    height: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-project-page {
+    margin: 100px 60px;
+  }
+  .container-project-page img {
+    width: 60%;
+    height: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-project-page {
+    margin: 100px 80px;
+  }
+  .container-project-page img {
+    width: 50%;
+    height: 15%;
+  }
+}

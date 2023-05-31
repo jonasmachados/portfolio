@@ -12,7 +12,7 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
 
   return (
-    <div className="navbar">
+    <div className="nav-bar">
       <motion.div className="hamburger" onClick={handleClick}
         initial={{ y: -250 }}
         animate={{ y: 0 }}
