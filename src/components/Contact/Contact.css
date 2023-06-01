@@ -93,6 +93,11 @@
   margin-bottom: 5%;
 }
 
+.buttons:hover {
+  background-color: var(--text-main);
+  color: var(--third-color);
+}
+
 .form-message {
   display: block;
   width: 100%;
