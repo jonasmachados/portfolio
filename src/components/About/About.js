@@ -1,13 +1,33 @@
 import FaqComponent from "../Faq/FaqComponent";
 import './About.css';
 import Profile from "../Profile/Profile";
+import { motion } from 'framer-motion';
+
+const containerAbout = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { delay: 0.2 }
+  },
+  exit: {
+    x: "-100vh",
+    transition: { ease: 'easeInOut' }
+  }
+};
 
 const About = () => {
   return (
-    <div className="container-about" id="about">
+    <motion.div className="container-about" id="about"
+      variants={containerAbout}
+      initial="hidden"
+      whileInView="visible"
+      exit="exit"
+    >
       <div><Profile /></div>
       <div><FaqComponent /></div>
-    </div>
+    </motion.div>
   );
 };
 

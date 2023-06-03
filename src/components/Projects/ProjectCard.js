@@ -8,7 +8,7 @@ const containerVariants = {
     },
     visible: {
         opacity: 1,
-        transition: { delay: 0.5, duration: 1 }
+        transition: { delay: 0.2}
     },
     hover: {
         opacity: 0.8,

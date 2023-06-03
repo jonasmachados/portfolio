@@ -1,5 +1,4 @@
 import "./FaqComponent.css"
-import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai';
 
@@ -18,20 +17,6 @@ const data = [
   },
 ];
 
-const containerVariants = {
-  hidden: {
-    opacity: 0,
-  },
-  visible: {
-    opacity: 1,
-    transition: { delay: 0.5, duration: 1 }
-  },
-  exit: {
-    x: "-100vh",
-    transition: { ease: 'easeInOut' }
-  }
-};
-
 const FaqComponent = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
@@ -44,11 +29,7 @@ const FaqComponent = () => {
   };
 
   return (
-    <motion.div className="faq-container"
-      variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
-      exit="exit"
+    <div className="faq-container"
     >
       {data.map((item, index) => (
         <div
@@ -71,7 +52,7 @@ const FaqComponent = () => {
           {expandedIndex === index && <p className="p_content">{item.content}</p>}
         </div>
       ))}
-    </motion.div>
+    </div>
   );
 };
 

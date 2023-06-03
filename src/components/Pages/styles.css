@@ -51,6 +51,12 @@
   background-color: var(--primary-color);
 }
 
+.container-cards h2:hover {
+  color: var(--primary-color);
+  background-color: var(--text-main);
+  cursor: pointer;
+}
+
 .description {
   margin: 40px 0;
 }
