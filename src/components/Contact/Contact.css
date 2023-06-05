@@ -29,18 +29,15 @@
   flex-direction: column;
   text-align: center;
   gap: 20px;
-}
-
-.contact-links a {
-  text-decoration: none;
+  font-size: 26px;
   color: var(--text-main);
   opacity: 0;
   height: 0;
 }
 
 .div-contact img {
-  height: auto;
-  width: auto;
+  max-height: 48px;
+  max-width: 48px;
   padding-right: 5px;
 }
 
@@ -51,7 +48,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: var(--third-color);
-  margin-top:0;
+  margin-top: 0;
   border-radius: 30px;
   padding-left: 5%;
   padding-right: 5%;
@@ -126,14 +123,13 @@
 @media (min-width: 992px) {
   .container-contact {
     grid-template-columns: repeat(2, 1fr);
-    
   }
-  
+
   .div-form form {
     border-radius: 30px;
     margin-top: 0px;
   }
-  .contact-links a {
+  .contact-links{
     opacity: 1;
     height: auto;
   }
