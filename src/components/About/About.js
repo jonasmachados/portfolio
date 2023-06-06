@@ -1,4 +1,4 @@
-import FaqComponent from "../Faq/FaqComponent";
+import FaqAboutMe from "../Faq/FaqAboutMe";
 import './About.css';
 import Profile from "../Profile/Profile";
 import { motion } from 'framer-motion';
@@ -26,7 +26,7 @@ const About = () => {
       exit="exit"
     >
       <div><Profile /></div>
-      <div><FaqComponent /></div>
+      <div><FaqAboutMe /></div>
     </motion.div>
   );
 };

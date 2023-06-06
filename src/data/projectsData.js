@@ -16,7 +16,7 @@ import projImgId15 from "../assets/img/project-app-bookStore thymeleaf.png";
 import projImgId16 from "../assets/img/project-spring-postgre.png";
 import projImgId17 from "../assets/img/project-spring.png";
 
-const projectsData = [
+const ProjectsData = [
     {
         id: 1,
         title: "Bookstore Inventory Control System",
@@ -486,4 +486,4 @@ const projectsData = [
     }
 ];
 
-export default projectsData;
+export default ProjectsData;

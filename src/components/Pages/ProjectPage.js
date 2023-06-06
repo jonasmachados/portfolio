@@ -1,12 +1,12 @@
 import { useParams } from 'react-router-dom';
-import projectsData from "../../data/projectsData";
+import ProjectsData from "../../data/ProjectsData";
 import { IoOpenOutline } from 'react-icons/io5';
 import { IoLogoGithub } from 'react-icons/io';
 import "./styles.css";
 
 const ProjectPage = () => {
     const { id } = useParams();
-    const filteredProjects = projectsData.filter((project) => project.id === Number(id));
+    const filteredProjects = ProjectsData.filter((project) => project.id === Number(id));
     const project = filteredProjects[0];
 
     if (!project) {

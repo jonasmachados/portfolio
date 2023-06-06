@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ProjectCard from "./ProjectCard"
-import projectsData from "../../data/projectsData";
+import ProjectsData from "../../data/ProjectsData";
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
@@ -27,7 +27,7 @@ const Projects = () => {
     }
 
     const [visibleProjects, setVisibleProjects] = useState(4);
-    const [allProjects] = useState(projectsData);
+    const [allProjects] = useState(ProjectsData);
 
     const loadMoreProjects = () => {
         setVisibleProjects(visibleProjects + 4);
@@ -48,8 +48,8 @@ const Projects = () => {
             </p>
             <div className="container-projects">
                 {allProjects.slice(0, visibleProjects).map((project, index) => (
-                    <ProjectCard key={index} 
-                    project={project}  />
+                    <ProjectCard key={index}
+                        project={project} />
                 ))}
             </div>
             <div className="button-container-project">
