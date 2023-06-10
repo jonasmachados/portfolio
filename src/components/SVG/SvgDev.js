@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import './index.css';
+import './styles.css';
 
 
 const svgVariants = {
@@ -61,7 +61,6 @@ const pathVariantsOnOffGray  = {
         }
     }
 };
-
 
 
 const SvgDev = () => {

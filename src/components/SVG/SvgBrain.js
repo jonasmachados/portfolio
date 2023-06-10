@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import './index.css';
+import './styles.css';
 
 const svgVariants = {
     hidden: { opacity: 0 },

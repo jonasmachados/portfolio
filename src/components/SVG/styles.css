@@ -20,9 +20,24 @@ header .skills-svg {
   stroke-linejoin: round;
   stroke-linecap: round;
 }
+.error-svg {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+}
 
 @media (min-width: 992px) {
   header .dev-svg {
     width: 500px;
+  }
+
+  .error-svg {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .error-svg {
+    width: 600px;
   }
 }

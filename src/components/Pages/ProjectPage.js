@@ -2,16 +2,16 @@ import { useParams } from 'react-router-dom';
 import ProjectsData from "../../data/ProjectsData";
 import { IoOpenOutline } from 'react-icons/io5';
 import { IoLogoGithub } from 'react-icons/io';
+import Error404 from  '../Error/Error404.js'
 import "./styles.css";
 
 const ProjectPage = () => {
     const { id } = useParams();
-    const filteredProjects = ProjectsData.filter((project) => project.id === Number(id));
-    const project = filteredProjects[0];
+    const project = ProjectsData.find((project) => project.id === Number(id));
 
     if (!project) {
         console.log('No project found with the provided id');
-        return <div>Project not found</div>;
+        return <Error404 message="No project found with the provided id" />;
     }
 
     const { title, p_card1, p_card2, p_card3, imgUrl, linkSite, linkGit, description } = project;
