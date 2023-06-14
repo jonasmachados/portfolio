@@ -7,6 +7,7 @@ import iconLocal from "../../assets/img/maps.png";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { motion } from 'framer-motion';
+import { validateContact } from "../../validations/validateContact";
 
 const containerVariants = {
   hidden: {
@@ -28,51 +29,90 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [text, setText] = useState("");
   const emailTo = "jonasmachado.ti@gmail.com";
+  const [ownerRefError, setOwnerRefError] = useState({ ownerRef: "" });
+  const [emailFromError, setEmailFromError] = useState({ emailFrom: "" });
+  const [subjectError, setSubjectError] = useState("");
+  const [textError, setTextError] = useState("");
 
   const refName = useRef(null);
   const refEmail = useRef(null);
   const refSubject = useRef(null);
   const refMessage = useRef(null);
 
-  const save = (e) => {
+  const handleOwnerRefChange = (event) => {
+    setOwnerRef(event.target.value);
+    setOwnerRefError({ ...setOwnerRefError, ownerRef: "" });
+  };
+
+  const handleEmailFromChange = (event) => {
+    setEmailFrom(event.target.value);
+    setEmailFromError({ ...emailFromError, emailFrom: "" });
+  };
+
+  const handleSubjectChange = (event) => {
+    setSubject(event.target.value);
+    setSubjectError({ ...subjectError, subject: "" });
+  };
+
+  const handleTextChange = (event) => {
+    setText(event.target.value);
+    setTextError({ ...textError, text: "" });
+  };
+
+  const save = async (e) => {
     e.preventDefault();
 
-    const users = { ownerRef, emailFrom, emailTo, subject, text };
+    const newUser = {
+      ownerRef,
+      emailFrom,
+      emailTo,
+      subject,
+      text,
+    };
 
-    request
-      .createUser(users)
-      .then((response) => {
-        console.log(response.data);
+    const validationResult = await validateContact(newUser);
 
-        toast.success('Message sent successfully!!', {
-          position: "top-center",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
+    if (validationResult.isValid) {
+      request
+        .createUser(newUser)
+        .then((response) => {
+          console.log(response.data);
+
+          toast.success('Message sent successfully!!', {
+            position: 'top-center',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'light',
+          });
+
+          refName.current.value = '';
+          refEmail.current.value = '';
+          refSubject.current.value = '';
+          refMessage.current.value = '';
+        })
+        .catch((error) => {
+          console.log(JSON.stringify(error));
+          toast.error('Message was not sent!!!', {
+            position: 'top-right',
+            autoClose: 9000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'light',
+          });
         });
-
-        refName.current.value = '';
-        refEmail.current.value = '';
-        refSubject.current.value = '';
-        refMessage.current.value = '';
-      })
-      .catch((error) => {
-        console.log(JSON.stringify(error));
-        toast.error('Message was not sent!!!', {
-          position: "top-right",
-          autoClose: 9000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
-      });
+    } else {
+      setOwnerRefError({ ...ownerRefError, ownerRef: validationResult.errors });
+      setEmailFromError({ ...emailFromError, emailFrom: validationResult.errors });
+      setSubjectError({ ...subjectError, subject: validationResult.errors });
+      setTextError({ ...textError, text: validationResult.errors });
+    }
   };
 
   (function () {
@@ -131,9 +171,14 @@ const Contact = () => {
               name="ownerRef"
               className="form-control"
               value={ownerRef}
-              onChange={(e) => setOwnerRef(e.target.value)}
+              onChange={handleOwnerRefChange}
             ></input>
           </div>
+          {ownerRefError.ownerRef &&
+            <p style={{ color: "red", fontSize: "20px", margin: "0" }}>
+              {ownerRefError.ownerRef.ownerRef}
+            </p>
+          }
 
           <div>
             <label className="form-label"> Your Email *</label>
@@ -144,9 +189,14 @@ const Contact = () => {
               name="emailFrom"
               className="form-control"
               value={emailFrom}
-              onChange={(e) => setEmailFrom(e.target.value)}
+              onChange={handleEmailFromChange}
             ></input>
           </div>
+          {emailFromError.emailFrom &&
+            <p style={{ color: "red", fontSize: "20px", margin: "0" }}>
+              {emailFromError.emailFrom.emailFrom}
+            </p>
+          }
 
           <div>
             <label className="form-label">Subject *</label>
@@ -157,9 +207,14 @@ const Contact = () => {
               name="subject"
               className="form-control"
               value={subject}
-              onChange={(e) => setSubject(e.target.value)}
+              onChange={handleSubjectChange}
             ></input>
           </div>
+          {subjectError.subject &&
+            <p style={{ color: "red", fontSize: "20px", margin: "0" }}>
+              {subjectError.subject.subject}
+            </p>
+          }
 
           <div>
             <label className="form-label"> Message *</label>
@@ -171,10 +226,15 @@ const Contact = () => {
               placeholder="Type something here.."
               name="text"
               value={text}
-              onChange={(e) => setText(e.target.value)}
+              onChange={handleTextChange}
               className="form-message count-chars "></textarea>
             <div className="input-msg text-red"></div>
           </div>
+          {textError.text &&
+            <p style={{ color: "red", fontSize: "20px", margin: "0" }}>
+              {textError.text.text}
+            </p>
+          }
 
           <button className="buttons" onClick={(e) => save(e)}>
             Send Message{" "}
