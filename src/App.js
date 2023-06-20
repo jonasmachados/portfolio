@@ -3,7 +3,7 @@ import Navbar from './components/NaviBar/Navibar';
 import Footer from './components/Footer/Footer';
 import ApiWhatsapp from './components/Utils/ApiWhatsapp';
 import RouteComponent from './components/Route/RouteComponents';
-import ReactGA from "react-ga4";
+import ReactGA from 'react-ga';
 import React, { useEffect } from "react";
 
 const App = () => {
@@ -13,7 +13,11 @@ const App = () => {
   ReactGA.initialize(TRACKING_ID);
 
   useEffect(() => {
-    ReactGA.pageview(document.location.pathname + window.location.search);
+    ReactGA.send({
+      hitType: 'pageview',
+      page: document.location.pathname
+        + window.location.search
+    });
   }, []);
 
   return (
