@@ -46,7 +46,8 @@ const pathVariantsOnOffGray = {
 
 const SvgBrain = () => {
     return (
-        <header>
+        <div className="container-svg">
+            
             <motion.svg className="skills-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 738.81995 576.27002"
                 variants={svgVariants}
                 initial="hidden"
@@ -184,7 +185,7 @@ const SvgBrain = () => {
 
             </motion.svg>
 
-        </header >
+        </div>
 
 
 

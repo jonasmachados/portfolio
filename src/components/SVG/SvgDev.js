@@ -62,10 +62,10 @@ const pathVariantsOnOffGray  = {
     }
 };
 
-
 const SvgDev = () => {
     return (
-        <header>
+        <div className="container-svg">
+
             <motion.div
                 drag
                 dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
@@ -160,7 +160,7 @@ const SvgDev = () => {
                 </motion.svg>
             </motion.div>
 
-        </header>
+        </div>
     )
 }
 

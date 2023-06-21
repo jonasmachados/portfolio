@@ -1,9 +1,9 @@
-header {
+.container-svg {
   display: flex;
   justify-content: center;
 }
 
-header .dev-svg {
+.dev-svg {
   width: 300px;
   overflow: visible;
   stroke: transparent;
@@ -12,7 +12,7 @@ header .dev-svg {
   stroke-linecap: round;
 }
 
-header .skills-svg {
+.skills-svg {
   width: 400px;
   overflow: #fff;
   stroke: transparent;
@@ -27,7 +27,7 @@ header .skills-svg {
 }
 
 @media (min-width: 992px) {
-  header .dev-svg {
+  .dev-svg {
     width: 500px;
   }
 
