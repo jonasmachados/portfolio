@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  font-size: 18px;
+  background: var(--secondary-color);
+  color: var(--background-color);
+  border-radius: 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  justify-content: center;
+  padding: 10px;
+  margin: 0;
+  font-size: 22px;
+}
+
+@media (min-width: 992px) {
+  .button {
+    width: 50%;
+  }
+}
