@@ -3,19 +3,11 @@ import { motion } from 'framer-motion';
 import '../styles/svg.css';
 
 const svgVariants = {
-    hidden: { rotate: 0, y: -50, opacity: 0 },
+    hidden: { rotate: 0, opacity: 0 },
     visible: {
         rotate: 360,
-        y: 50,
         opacity: 1,
         transition: {
-            y: {
-                delay: 1,
-                duration: 1,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "easeInOut",
-            },
             opacity: {
                 delay: 2,
                 duration: 1,

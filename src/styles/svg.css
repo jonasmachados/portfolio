@@ -31,15 +31,11 @@
   }
 
   .dev-svg {
-    width: 500px;
+    width: 400px;
   }
 }
 
 @media (min-width: 992px) {
-  .dev-svg {
-    width: 500px;
-  }
-
   .skills-svg {
     width: 500px;
   }
@@ -51,7 +47,17 @@
 
 @media (min-width: 1200px) {
   .dev-svg {
+    width: 500px
+  }
+
+  .error-svg {
     width: 600px;
+  }
+}
+
+@media (min-width: 2200px) {
+  .dev-svg {
+    width: 800px
   }
 
   .error-svg {
