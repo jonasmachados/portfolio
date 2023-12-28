@@ -3,7 +3,7 @@
 .main-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 2.5em;
+  gap: 1.5em;
 }
 
 .bio-info-container {
@@ -15,6 +15,7 @@
 .bio-svg-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .tagline {
@@ -39,6 +40,7 @@
   color: var(--text-color);
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 
 .bio-info-container h1 {
@@ -55,17 +57,13 @@
 }
 
 @media (min-width: 767px) {
-  .bio-info-container {
-    gap: 2.5em;
-  }
-
   .tagline {
     width: 60%;
     font-size: 22px;
   }
 
   .bio-info-container h1 {
-    font-size: 58px;
+    font-size: 56px;
   }
 
   .bio-info-container h2 {
@@ -81,19 +79,11 @@
   .main-container {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .bio-info-container {
-    gap: 2em;
-  }
-
-  .bio-svg-container {
-    align-items: center;
-  }
 }
 
 @media (min-width: 1400px) {
   .bio-info-container {
-    gap: 3.8em;
+    gap: 3em;
   }
 
   .bio-info-container h1 {
