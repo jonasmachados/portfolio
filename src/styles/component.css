@@ -5,6 +5,7 @@
   background: var(--background-color);
   gap: 2.5em;
   padding-top: 30px;
+  overflow-x: hidden;
 }
 
 .split-component-container {
