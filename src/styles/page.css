@@ -1,0 +1,12 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  margin: 3em 3% 6em 3%;
+  gap: 12em;
+}
+
+@media (min-width: 767px) {
+  .page-container {
+    margin: 6em 10% 6em 10%;
+  }
+}
