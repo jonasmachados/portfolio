@@ -2,26 +2,26 @@
 
 .footer-container {
   display: grid;
-  gap: 50px;
-  padding: 10px;
+  gap: 80px;
   background-color: var(--primary-color);
   justify-items: center;
   text-align: center;
   font-family: "Poppins", sans-serif;
   margin: 20px;
+  padding: 5px;
   border-radius: 12px;
 }
 
 .footer-container h2 {
-  font-size: 18px;
+  font-size: 22px;
   margin-top: 10px;
   color: var(--text-color);
 }
 
 .footer-container p,
 .footer-container a {
-  font-size: 14px;
-  margin-top: 5px;
+  font-size: 16px;
+  margin: 12px 0px;
   color: var(--text-color);
 }
 .footer-container a {
@@ -46,6 +46,7 @@
   margin-right: 6px;
   border: 1px solid var(--text-color);
   transition: 0.3s, color 0.3s;
+  padding-top: 3px;
 }
 
 .footer-social-icon a i {
@@ -59,7 +60,7 @@
 }
 
 .footer-social-icon a:hover i {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .footer-logo {
@@ -68,7 +69,24 @@
 
 @media (min-width: 768px) {
   .footer-container {
-    grid-template-columns: repeat(3, 1fr);
     padding: 50px;
+  }
+
+  .footer-container h2 {
+    font-size: 24px;
+  }
+
+  .footer-container p,
+  .footer-container a {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 150px;
+    padding: 80px;
+    justify-items: left;
   }
 }
