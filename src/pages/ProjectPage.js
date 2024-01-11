@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import ProjectsData from "../data/ProjectsData.js";
 import { IoOpenOutline } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io";
-import Error404 from "../components/Error/Error404.js";
+import NotFoundPage from "./NotFoundPage.js";
 import "../styles/project-page.css";
 import "../styles/page.css";
 
@@ -13,7 +13,7 @@ const ProjectPage = () => {
 
   if (!project) {
     console.log("No project found with the provided id");
-    return <Error404 message="No project found with the provided id" />;
+    return <NotFoundPage message="No project found with the provided id" />;
   }
 
   const {
