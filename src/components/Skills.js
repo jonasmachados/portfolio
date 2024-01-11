@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import SvgBrain from "./SVG/SvgBrain.js";
+import SvgBrain from "./SvgBrain.js";
 import SkillCard from "./SkillCard.js";
 import SkillsData from "../data/SkillsData.js";
 import "../styles/skills-card.css";
