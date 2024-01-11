@@ -21,6 +21,7 @@
     "react-ga": "^3.3.1",
     "react-hook-form": "^7.34.0",
     "react-icons": "^4.4.0",
+    "react-lazy-load": "^4.0.1",
     "react-multi-carousel": "^2.8.2",
     "react-native-gesture-handler": "^2.5.0",
     "react-native-reanimated": "^2.9.1",
