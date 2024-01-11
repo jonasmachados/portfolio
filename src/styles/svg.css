@@ -20,11 +20,13 @@
   stroke-linejoin: round;
   stroke-linecap: round;
 }
+
 .error-svg {
-  width: 400px;
+  width: 280px;
   margin: 0;
   padding: 0;
 }
+
 @media (min-width: 767px) {
   .skills-svg {
     width: 400px;
@@ -32,6 +34,10 @@
 
   .dev-svg {
     width: 400px;
+  }
+
+  .error-svg {
+    width: 500px;
   }
 }
 
@@ -41,26 +47,25 @@
   }
 
   .error-svg {
-    width: 500px;
+    width: 600px;
   }
 }
 
 @media (min-width: 1200px) {
   .dev-svg {
-    width: 500px
+    width: 500px;
   }
-
   .error-svg {
-    width: 600px;
+    width: 800px;
   }
 }
 
 @media (min-width: 2200px) {
   .dev-svg {
-    width: 800px
+    width: 800px;
   }
 
   .error-svg {
-    width: 600px;
+    width: 1100px;
   }
 }
