@@ -16,7 +16,7 @@ html {
 body {
   margin: 0;
   background-color: var(--background-color) !important;
-  color: var(--text-main) !important;
+  color: var(--text-color)!important;
   font-family: "Poppins", sans-serif;
 }
 
