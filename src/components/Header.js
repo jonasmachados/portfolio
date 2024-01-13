@@ -20,7 +20,6 @@ import "../styles/header.css";
 import logo from "../assets/img/logo.png";
 
 const Header = () => {
-
   const [click, setClick] = useState(false);
 
   const handleClick = () => {
@@ -32,7 +31,6 @@ const Header = () => {
   return (
     <>
       <div className="header-container">
-
         <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
@@ -127,8 +125,6 @@ const Header = () => {
         </ul>
 
       </div>
-
-      <div class="spacer"></div>
     </>
   );
 };
