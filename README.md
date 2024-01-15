@@ -1,120 +1,87 @@
-<h1 align="center">My Portfolio 🧑‍💻  </h1>
+# Jonas Machado's Portfolio
 
-<p align="center">
-  <br>
-	<img src="https://user-images.githubusercontent.com/67349235/203813523-69588000-5312-47a4-b887-47d75c6cf72b.png">
-</p>
+![Portfolio Preview](/src/assets/img/portfolio.png)
 
-<div align="center">
-<a href="https://jonasmachado.netlify.app"><img src="https://user-images.githubusercontent.com/67349235/203813371-164a8a4e-08b2-4577-9c86-c4cb2c3feb58.png" alt="button"/></a>
-</div>
+Welcome to my professional portfolio! This repository contains the code for my personal website where I showcase my skills, projects, and a bit about myself.
 
-<h2>About</h2>
+## Table of Contents
 
-<p>This project is my portfolio, talking a landing about me, the skills i have, my contact and some of my projects.
-<br>
-<p>My website was developed with <b>React</b> on the frontend and SpringBoot in the <b>backend</b> It was hosted on netlify and Heroku. </p>
-<br>
+- [Introduction](#introduction)
+- [Portfolio Links](#portfolio-links)
+- [Description](#description)
+- [Technologies Used](#technologies-used)
+- [Projects Showcase](#projects-showcase)
+- [How to Run Locally](#how-to-run-locally)
+- [Contact Information](#contact-information)
 
-<h2> Technologies Used</h2>
-  <h3> Back-end </h3>
-  <u1>
-	<li><a href="https://www.oracle.com/br/java/technologies/javase-jdk15-downloads.html"> JDK 15 </a> : is a development environment for building applications, applets, and components using the Java programming language. </li>
-	 <li><a href="https://netbeans.apache.org/download/index.html"> NetBeans</a> : NetBeans IDE is a free and open source integrated development environment for software developers in the Java languages. </li>
-	<li><a href="https://spring.io/"> Spring Boot </a> : Spring Boot is an open source, microservice-based Java web framework. The Spring Boot framework creates a fully production-ready environment that is completely configurable using its prebuilt code within its codebase.</li>
-	<li><a href="https://maven.apache.org/"> Maven </a> : Maven is a build automation tool used primarily for Java projects.</li>
-	<li><a href="https://www.postman.com/downloads/"> Postman </a> : Postman is an API platform for developers to design, build, test and iterate their APIs. </li>
-	 <li><a href="https://www.h2database.com/html/main.htmls/"> H2 Database Engine </a> : H2 is a relational database management system written in Java to test. </li>
-	<li><a href="https://www.postgresql.org/"> Postgresql </a> : is a free and open-source relational database management system (RDBMS)emphasizing extensibility and SQL compliance. </li>
-	<li><a href="https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail"> SpringBoot Starter Mail </a> : JavaMail Library to send mail via SMTP.</li>
-	
-  </ul>
-  	
- <h3>Front-end </h3>
- <ul>
-	</li>
-	<li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"> HTML</a> :  is the standard markup language for documents designed to be displayed in a web browser. </li>
-	<li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"> CSS</a> : is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. </li>
-	<li><a href="https://developer.mozilla.org/ptBR/docs/Web/JavaScript"> JavaScript</a> : is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. </li>
-	<li><a href="https://yarnpkg.com/"> Yarn</a> : is a software packaging system developed in 2016 by Facebook for the Node.js JavaScript runtime environment. </li>
-	<li><a href="https://nodejs.org/"> Node </a> : As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications. </li>
-	<li><a href="https://reactjs.org/"> ReactJS </a> : is a free and open-source front-end JavaScript library for building user interfaces based on UI components. </li>
-	<li><a href="https://www.netlify.com/"> Netlify </a> : Netlify is a San Francisco-based cloud computing company that offers hosting and serverless backend services for web applications and static websites. </li>
-	<li><a href="https://code.visualstudio.com/"> VS Code</a> : is a source-code editor made by Microsoft for Windows. </li>
-</ul>
+## Introduction
 
-<h2>Installation </h2>
+Hey there! I'm Jonas Machado, a passionate software developer with a love for creating innovative solutions. This portfolio serves as a hub for anyone interested in learning more about my journey, skills, and the projects I've worked on.
 
-<p>For download the source code of project in yout PC, firstly you must have install in your PC the<a href="https://git-scm.com/"> GIT </a>.</p>
-<br>
-<p>With the Git installed, in your terminal execute the following command:</p>
+## Portfolio Links
 
-```
- $ git clone https://github.com/jonasmachados
-```
+- **Live Portfolio:** [https://jonasmachado.netlify.app](https://jonasmachado.netlify.app)
 
-<br>
+## Description
 
-<p>Install JDK 15</p>
+My portfolio is a full-stack web application developed with a tech stack that reflects my skills and expertise. It not only serves as an introduction to who I am but also showcases the projects I've worked on and the technologies I've used.
 
-```
-https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html
-```
+## Technologies Used
 
-<br>
+### Backend
 
-<p>Install Postman </p>
+- **Spring Boot:** A microservice-based Java web framework.
+- **Maven:** A build automation tool used primarily for Java projects.
+- **Postman:** An API platform for designing, building, testing, and iterating APIs.
+- **H2 Database Engine:** A relational database management system written in Java for testing.
+- **PostgreSQL:** A free and open-source relational database management system.
+- **SpringBoot Starter Mail:** JavaMail Library to send mail via SMTP.
 
-```
-https://www.postman.com/downloads/
-```
+### Frontend
 
-<br>
+- **HTML:** The standard markup language for documents designed to be displayed in a web browser.
+- **CSS:** A style sheet language used for describing the presentation of a document written in a markup language.
+- **JavaScript:** A programming language that is one of the core technologies of the World Wide Web.
+- **Yarn:** A software packaging system developed by Facebook for the Node.js JavaScript runtime environment.
+- **Node.js:** An asynchronous event-driven JavaScript runtime.
+- **ReactJS:** A free and open-source front-end JavaScript library for building user interfaces.
+- **react-router-dom:** Declarative routing for React.js applications.
+- **react-whatsapp-button:** A React component for adding a WhatsApp button to your website.
+- **use-mailchimp-form:** A custom hook for integrating Mailchimp forms with React.
+- **yup:** A JavaScript schema builder for value parsing and validation.
+- **Netlify:** A cloud computing company that offers hosting and serverless backend services.
 
-<p>Install NodeJS 16.x </p>
+## Projects Showcase
 
-```
-https://nodejs.org/en/download/
-```
+Here are some of the key projects featured in my portfolio:
 
-<br>
+1. **Bookstore Management Web App**
+   - The Bookstore Management Web App is a comprehensive solution for managing book inventory, tracking sales and purchases, registering customers, and generating various reports. It is designed to provide a user-friendly interface for efficient stock control and business insights.
 
-<p>Install VS Code </p>
+2. **Backend To-Do List**
+   - The Backend To-Do List project serves as the backend for a to-do list application developed in Java with the Spring Boot framework. The project uses the Maven dependency manager and an H2 database.
 
-```
-https://code.visualstudio.com/download
-```
+3. **Frontend To-Do List**
+   - The Frontend To-Do List is the user interface part of a To-Do List project, a web application that allows users to create, read, update, and delete to-do list items. The frontend was developed using HTML, CSS, JavaScript, and Yarn.
 
-<br>
-<p> </p>
+Feel free to explore more projects on my live portfolio: [Jonas Machado's Portfolio](https://jonasmachado.netlify.app).
 
-```
-yarn add react-bootstrap
-```
+## How to Run Locally
 
-<p> </p>
+To run the project locally, follow these steps:
 
-```
-yarn add react-bootstrap-icons
-```
+1. Clone the repository: `git clone https://github.com/jonasmachados/portfolio.git`
+2. Navigate to the project folder: `cd portfolio`
+3. Install dependencies: `yarn install`
+4. Start the application: `yarn start` 
 
-<p>React YUP</p>
+## Contact Information
 
-```
-yarn add yup
-```
-<p>React Toastify</p>
+Feel free to reach out! I'm open to collaboration and always excited to connect with fellow developers.
 
-```
-yarn add react-toastify
-```
+- **Email:** jonasmachado.ti@gmail.com
+- **LinkedIn:** [LinkedIn Profile](https://www.linkedin.com/in/jonas-machados/)
+- **Instagram:** [Instagram Profile](https://www.instagram.com/jonasmachado01/)
 
-<br>
-<h3>Link of my WebSite: </h3>
+Looking forward to hearing from you!
 
-```
-https://jonasmachado.netlify.app/
-```
-
-<h2> Author: </h2>
- <b> Jonas Machado</b>
