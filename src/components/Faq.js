@@ -18,7 +18,7 @@ const Faq = ({ allDatas }) => {
           className={`faq-item ${expandedIndex === index ? 'expanded' : ''}`}
         >
 
-          <p className="p_title">
+          <h3 className="faq-text">
             {item.title}
             <button
               className="expand-button"
@@ -27,10 +27,10 @@ const Faq = ({ allDatas }) => {
                 <IoMdClose className="expand-icon" /> :
                 <FiPlus className="expand-icon" />}
             </button>
-          </p>
+          </h3>
 
           {expandedIndex === index &&
-            <p className="p_content">
+            <p className="faq-text">
               {item.content}
             </p>
           }
