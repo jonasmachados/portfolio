@@ -9,26 +9,18 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
-  background-color: var(--primary-color);
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
   border-radius: 12px;
   padding: 10px;
+  margin: 12px;
   transition: transform 0.3s ease-in-out;
   width: auto;
-  gap: 20px;
+  gap: 12px;
 }
 
 .project-card:hover {
   transform: scale(1.01);
-}
-
-.project-card h3 {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 18px;
-  font-weight: 900;
-  padding: 0;
-  margin: 0;
 }
 
 .project-card-technologies {
@@ -36,19 +28,6 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
-}
-
-.p-technologies,
-.p-subtitle {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  padding: 0;
-  margin: 0;
-}
-
-.p-technologies{
-  font-weight: bold;
 }
 
 .project-card img {
@@ -62,40 +41,15 @@
   justify-content: center;
 }
 
-.p-open-project {
-  font-size: 20px;
-  margin-right: 10px;
-  padding: 0;
-  margin: 0;
-}
-
 .icon-open-project {
-  font-size: 26px; 
-  color: var(--text-main); 
+  font-size: 26px;
+  color: var(--text-main);
 }
 
 @media (min-width: 767px) {
-
-  .project-card h3 {
-    font-size: 24px;
-  }
-
-  .p-subtitle {
-    font-size: 20px;
-  }
-
   .project-card img {
     max-width: 450px;
     height: 300px;
-  }
-
-  .p-technologies {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .p-open-project {
-    font-size: 24px;
   }
 }
 

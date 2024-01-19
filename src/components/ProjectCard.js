@@ -36,20 +36,14 @@ const ProjectCard = ({ project }) => {
       exit="exit"
       onClick={openProjectPage}
     >
-      <h3>{project.title}</h3>
-
-      <div className="project-card-technologies">
-        <p className="p-technologies">
-          {project.p_card1} | {project.p_card2} | {project.p_card3}
-        </p>
-      </div>
+      <h2>{project.title}</h2>
 
       <img src={project.imgUrl} alt={`Screenshot of ${project.title}`} />
 
-      <p className="p-subtitle">{project.subtitle}</p>
+      <p>{project.subtitle}</p>
 
       <div className="open-project">
-        <p className="p-open-project">Open project </p>
+        <p>Open project </p>
         <IoMdOpen className="icon-open-project" />
       </div>
     </motion.div>
