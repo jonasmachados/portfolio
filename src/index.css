@@ -21,7 +21,9 @@ body {
 }
 
 h1,
-p {
+h2,
+h3,
+p{
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: var(--text-color);
@@ -30,18 +32,28 @@ p {
 }
 
 h1 {
-  font-size: 60px;
+  font-size:2.5em;
   font-weight: 900;
   text-transform: capitalize;
 }
 
+h2 {
+  font-size:1.5em;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size:.1.3em;
+  text-transform: capitalize;
+}
+
 p {
-  font-size: 30px;
+  font-size: 1.2em;
 }
 
 a {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.2em;
 }
 
 a:hover {
