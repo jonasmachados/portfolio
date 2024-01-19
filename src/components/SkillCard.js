@@ -1,23 +1,21 @@
 import "../styles//skills-card.css";
 
 const SkillCard = ({ skill }) => {
+  return (
+    <div className="skill-card-container">
+      <h3>{skill.skillName}</h3>
 
-    return (
-        <div className="skill-card-container">
+      <ul>
+        {skill.listTechnologies.map((technology) => (
+          <li key={technology}>
+            <p className="skill-icon">{technology.icon}</p>
 
-            <h2>{skill.skillName}</h2>
-
-            <ul>
-                {skill.listTechnologies.map((technology) => (
-                    <li key={technology}>
-                        <p className="p-icon">{technology.icon}</p>
-
-                        <p className="p-name">{technology.name}</p>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
+            <p>{technology.name}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default SkillCard;
