@@ -9,7 +9,7 @@
 .bio-info-container {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  gap: 2.5em;
 }
 
 .bio-svg-container {
@@ -63,7 +63,7 @@
   }
 
   .bio-info-container h1 {
-    font-size: 48px;
+    font-size: 58px;
   }
 
   .bio-info-container h2 {
@@ -83,17 +83,17 @@
   }
 
   .bio-info-container {
-    gap: 2em;
+    gap: 3.5em;
   }
 }
 
 @media (min-width: 1800px) {
   .bio-info-container {
-    gap: 4em;
+    gap: 4.5em;
   }
 
   .bio-info-container h1 {
-    font-size: 58px;
+    font-size: 62px;
   }
 
   .bio-info-container h2 {
