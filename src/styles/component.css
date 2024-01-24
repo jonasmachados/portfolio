@@ -5,11 +5,11 @@
   background: var(--background-color);
   gap: 2.5em;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .split-component-container {
   align-items: center;
-  gap: 2em;
 }
 
 @media (min-width: 992px) {
