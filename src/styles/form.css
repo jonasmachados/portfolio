@@ -7,7 +7,7 @@
   background-color: var(--primary-color);
   border-radius: 12px;
   gap: 20px;
-  padding: 30px 5px;
+  padding: 12px 5px;
 }
 
 .form-group {
@@ -18,9 +18,13 @@
 .form-label,
 .form-input,
 .form-textarea {
-  font-size: 18px;
+  font-size: 1.2em;
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
+}
+
+.form-input{
+  font-size: 1em;
 }
 
 .form-label {
@@ -30,18 +34,18 @@
 .form-input {
   border-radius: 12px;
   border: 1px solid var(--secondary-color);
-  height: 25px;
+  height: auto;
   width: auto;
-  padding: 10px;
+  padding: 8px;
 }
 
 .form-textarea {
   display: block;
   border-radius: 12px;
   width: auto;
-  height: 150px;
+  height: 90px;
   margin-top: 5px;
-  padding: 10px;
+  padding: 8px;
   border: 1px solid var(--secondary-color);
 }
 
@@ -53,6 +57,6 @@
 
 @media (min-width: 767px) {
   .form {
-    padding: 30px 15px;
+    padding: 12px;
   }
 }
