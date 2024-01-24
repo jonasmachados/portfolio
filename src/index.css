@@ -23,12 +23,14 @@ body {
 h1,
 h2,
 h3,
-p{
+p,
+a{
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: var(--text-color);
   margin: 0;
   padding: 0;
+  line-height: 1;
 }
 
 h1 {
@@ -54,7 +56,6 @@ p {
 a {
   text-decoration: none;
   font-size: 1.2em;
-  color: var(--text-color);
 }
 
 a:hover {
