@@ -33,7 +33,7 @@ const Contact = () => {
             exit="exit"
             variants={containerVariants}
           >
-            <div>
+            <div className="component-container">
               <h1>Contact</h1>
 
               <p>Get in contact with me by completing this form.</p>
@@ -41,19 +41,17 @@ const Contact = () => {
               <div className="contact-links">
                 <div className="contact-item">
                   <FaPhoneSquareAlt className="contact-icon" />
-                  <span className="contact-description">+55(35)99128326</span>
+                  <p> +55(35)99128326 </p>
                 </div>
 
                 <div className="contact-item">
                   <MdEmail className="contact-icon" />
-                  <span className="contact-description">
-                    jonasmachado.ti@gmail.com
-                  </span>
+                  <p>jonasmachado.ti@gmail.com</p>
                 </div>
 
                 <div className="contact-item">
                   <SiGooglemaps className="contact-icon" />
-                  <span className="contact-description">MG- Brazil</span>
+                  <p>MG- Brazil</p>
                 </div>
               </div>
             </div>
