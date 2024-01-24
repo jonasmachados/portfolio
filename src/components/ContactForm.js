@@ -149,12 +149,14 @@ const ContactForm = () => {
           )}
         </div>
 
-        <Button
-          buttonName={"Send Message"}
-          onClickFunction={handleSendMessage}
-        />
+        <div>
+          <Button
+            buttonName={"Send Message"}
+            onClickFunction={handleSendMessage}
+          />
+        </div>
       </form>
-      
+
       <div>
         <ToastContainer style={{ marginTop: "70px" }} />
       </div>
